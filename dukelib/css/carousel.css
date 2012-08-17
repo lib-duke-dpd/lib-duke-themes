@@ -21,6 +21,7 @@ div.prevButton, div.nextButton {height: 20px; width: 20px;}
 div.prevButton {background: url(../images/navarrow_left.png) no-repeat; margin-right: 2px;}
 div.prevButton:hover {background: url(../images/navarrow_left_blue.png) no-repeat;}
 div.nextButton {background: url(../images/navarrow_right.png) no-repeat;}
+div.nextButton:hover {background: url(../images/navarrow_right_blue.png) no-repeat;}
 
 .img-shadow {
 }

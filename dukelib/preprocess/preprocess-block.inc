@@ -1,6 +1,9 @@
 <?php
 
 function dukelib_alpha_preprocess_block(&$vars) {
+	if ($vars['block']->delta == 'duke-footer-links' || $vars['block']->delta == 'menu-duke-footer-links') {
+		$vars['content_attributes_array']['id'] = 'footerLinksB';
+	}
 	if ($vars['block']->title == 'News, Events & Exhibits') {
 		$vars['content_attributes_array']['class'][] = 'myCarouselNews';
 

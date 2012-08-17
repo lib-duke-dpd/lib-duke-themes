@@ -23,10 +23,41 @@ div#searchTabs ul li a span {font-size: 12px;}
 		margin-bottom: 10px;
 	}
 
+/*============== FOOTER LINKS =================*/
+#footerLinksB {
+	background-color: #E1DFD7;
+	border-top: 1px dotted black;
+	border-bottom: 1px dotted black;
+	color: #222;
+	font-size: 0.80em;
+	font-weight: bold;
+	padding: 8px;
+	text-align: center;
+	margin-bottom: 1em;
+}
+	#footerLinksB ul.menu {
+		list-style: none;
+		text-align: center;
+	}
+	#footerLinksB ul.menu li {
+		display: inline;
+		list-style-type: none;
+		list-style-image: none;
+	}
+	#footerLinksB ul.menu a {
+		text-decoration: none;
+		color: black !important;
+	}
+	#footerLinksB ul.menu a:hover {
+		text-decoration: underline;
+		color: #036 !important;
+	}
+
 /*=============== Hours Table =================*/
 div.toggle-trigger {
 	text-align: center;
 }
+
 /*----------------------- MENU ZONE / MEGAMENU ----------------------*/
 .zone-menu-wrapper {
 	background-color: #DAD0C6;
