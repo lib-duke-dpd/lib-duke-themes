@@ -67,6 +67,12 @@ div.toggle-trigger {
 	text-align: center;
 }
 
+/*============== How Do I 'menu' ===============*/
+#menuHowDoI ul li {
+	list-style-type: none;
+	list-style-image: none;
+	margin-left: 0 !important;
+}
 /*----------------------- MENU ZONE / MEGAMENU ----------------------*/
 .zone-menu-wrapper {
 	background-color: #DAD0C6;
