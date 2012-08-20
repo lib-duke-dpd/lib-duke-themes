@@ -1,8 +1,13 @@
 <?php
 
 function dukelib_alpha_preprocess_block(&$vars) {
+	if ($vars['block']->module == 'dukelib_ui' && $vars['block']->delta == 'cc_license') {
+		$vars['content_attributes_array']['id'] = 'copyright-share';
+	}
 	if ($vars['block']->delta == 'duke-footer-links' || $vars['block']->delta == 'menu-duke-footer-links') {
 		$vars['content_attributes_array']['id'] = 'footerLinksB';
+		$vars['content_attributes_array']['class'][] = 'omega';
+		$vars['content_attributes_array']['class'][] = 'alpha';
 	}
 	if ($vars['block']->title == 'News, Events & Exhibits') {
 		$vars['content_attributes_array']['class'][] = 'myCarouselNews';
