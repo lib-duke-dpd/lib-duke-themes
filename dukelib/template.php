@@ -16,18 +16,6 @@ function dukelib_page_alter(&$page) {
  	//dpm($page['footer']);
 }
 
-function dukelib_block_info() {
-	$blocks['social-links'] = array(
-		'info' => t('Social Links for Duke Library Websites'),
-		'cache' => DRUPAL_NO_CACHE,
-	);
-	$blocks['copyright-share'] = array(
-		'info' => t('Copyright/Share information for Duke Library Websites'),
-		'cache' => DRUPAL_NO_CACHE,
-	);
-	return $blocks;
-}
-
 function dukelib_aggregator_block_item($vars) {
 	$hrefUrl = $vars['item']->link;
 	$imgSrc = '';
