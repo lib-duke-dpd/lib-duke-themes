@@ -23,6 +23,10 @@ div#searchTabs ul li a span {font-size: 12px;}
 		margin-bottom: 10px;
 	}
 
+.duke-footer {
+	margin-top: 10px;
+}
+
 /*============== FOOTER LINKS =================*/
 #footerLinksB {
 	background-color: #E1DFD7;
