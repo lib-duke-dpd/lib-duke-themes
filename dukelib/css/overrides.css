@@ -53,6 +53,11 @@ div#searchTabs ul li a span {font-size: 12px;}
 		color: #036 !important;
 	}
 
+/*-------------- FOOTER / Creative Commons -----------*/
+#copyright-share {
+	text-align: right;
+}
+
 /*=============== Hours Table =================*/
 div.toggle-trigger {
 	text-align: center;
