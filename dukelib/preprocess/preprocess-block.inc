@@ -9,6 +9,9 @@ function dukelib_alpha_preprocess_block(&$vars) {
 		$vars['content_attributes_array']['class'][] = 'omega';
 		$vars['content_attributes_array']['class'][] = 'alpha';
 	}
+	if (in_array($vars['block']->subject, array('How Do I...', 'How Do I'))) {
+		$vars['content_attributes_array']['id'] = 'menuHowDoI';
+	}
 	if ($vars['block']->title == 'News, Events & Exhibits') {
 		$vars['content_attributes_array']['class'][] = 'myCarouselNews';
 
