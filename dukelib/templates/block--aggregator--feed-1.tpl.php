@@ -7,7 +7,7 @@
 	<div class="navButton nextButton" id="nextNews"></div>
 </div>
 <?php if ($block->subject): ?>
-	<h4 <?php print $title_attributes; ?>><?php print $block->subject; ?></h4>
+	<h2 <?php print $title_attributes; ?>><?php print $block->subject; ?></h2>
 <?php endif; ?>
 <div id="<?php print $block_html_id; ?>" class="<?php print $classes; ?>"<?php print $attributes;?>>
 	<?php print render($title_prefix); ?>
