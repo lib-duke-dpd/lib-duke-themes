@@ -10,6 +10,13 @@ div#searchTabs ul li a span {font-size: 12px;}
 	padding: 3px 0;
 }
 
+.site-wide-search {
+	text-align: right;
+}
+	.region-site-search-inner {
+		margin-top: 10px;
+	}
+
 /********************* DUKE LIBRARY FOOTER (not the bottom links) ********/
 .dukelib-bottom {
 	background: #324299 url(../images/footer-blue-gradient.jpg) repeat-x top left;
