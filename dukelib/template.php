@@ -14,6 +14,7 @@
 function dukelib_page_alter(&$page) {
 	// NOTHING TO ALTER at the moment
  	//dpm($page['footer']);
+	// added for the fun of it
 }
 
 function dukelib_aggregator_block_item($vars) {
