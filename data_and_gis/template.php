@@ -115,8 +115,12 @@ function data_and_gis_preprocess_region(&$variables, $hook) {
  * @param $hook
  *   The name of the template being rendered ("block" in this case.)
  */
-/* -- Delete this line if you want to use this function
 function data_and_gis_preprocess_block(&$variables, $hook) {
+	if ($variables['block']->delta == '1') {	// adjust when the delta value for the 'hours' block is known/changed
+		// with this line below, we can effectively apply styling to the target block based on
+		// 'data_gis_block-hours'.
+		$variables['classes_array'][] = 'data_gis_block-hours';
+	}
   // Add a count to all the blocks in the region.
   // $variables['classes_array'][] = 'count-' . $variables['block_id'];
 
@@ -126,4 +130,3 @@ function data_and_gis_preprocess_block(&$variables, $hook) {
   //  $variables['theme_hook_suggestions'] = array_diff($variables['theme_hook_suggestions'], array('block__no_wrapper'));
   //}
 }
-// */
