@@ -83,7 +83,6 @@
  * @see template_process()
  * @see html.tpl.php
  */
- kpr($page);
 ?>
 
 <div id="page">
