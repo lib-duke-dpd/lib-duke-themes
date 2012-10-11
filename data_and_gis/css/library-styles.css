@@ -409,6 +409,7 @@ text-decoration: underline;
 /*-------------- PANELS and PANES, etc --------------*/
 .pane-content ul.listNoDots {
 	list-style-type: none;
+	padding: 0 !important;
 }
 	.pane-content ul.listNoDots li {
 		margin-left: 0;
