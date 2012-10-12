@@ -453,8 +453,17 @@ line-height: 1em;
 .featureText p {
 font-size: 14px;
 font-family: Arial, Helvetica, sans-serif;
+color: #fff;
 }
 
+.featureText a {
+color: #eee;
+}
+
+.featureText a:hover {
+color: #ddd;
+font-weight: bold;
+}
 
 
 
