@@ -458,11 +458,12 @@ color: #fff;
 
 .featureText a {
 color: #eee;
+text-decoration: underline;
+font-weight: bold;
 }
 
 .featureText a:hover {
 color: #ddd;
-font-weight: bold;
 }
 
 
