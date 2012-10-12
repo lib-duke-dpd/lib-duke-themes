@@ -186,34 +186,6 @@
 
     </div><!-- /#navigation -->
 
-    <?php
-      // Render the sidebars to see if there's anything in them.
-      $sidebar_first  = render($page['sidebar_first']);
-      $sidebar_second = render($page['sidebar_second']);
-    ?>
-
-    <?php if ($sidebar_first || $sidebar_second): ?>
-      <aside class="sidebars">
-        <?php print $sidebar_first; ?>
-        <?php print $sidebar_second; ?>
-      </aside><!-- /.sidebars -->
-    <?php endif; ?>
-
-
-	<?php if ($page['column_1']): ?>
- 		<?php print render($page['column_1']); ?>
-	<?php endif; ?>
-	
-	
-	<?php if ($page['column_2']): ?>
- 		<?php print render($page['column_2']); ?>
-	<?php endif; ?>
-	
-	<?php if ($page['column_3']): ?>
- 		<?php print render($page['column_3']); ?>
-	<?php endif; ?>
-
-
 
   </div><!-- /#main -->
 
