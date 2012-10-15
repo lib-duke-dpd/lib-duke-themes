@@ -544,7 +544,7 @@ margin:0;
 
 .panel-col {
 	
-	width: 30% !important;
+	width: 31% !important;
 	border-right: 1px solid #E6E6E6;
 	padding-right: 10px;
 	margin-right: 10px;
@@ -554,7 +554,7 @@ margin:0;
 }
 
 .panel-col-first, .panel-col-last {
-	width: 32% !important;
+	width: 31% !important;
 	border-right: none;
 	padding-right: 0;
 	margin-right: 0;
