@@ -447,6 +447,8 @@ color: white;
 font-size: 24px;
 font-family: Garamond, sans-serif;
 line-height: 1em;
+margin-top:0;
+margin-bottom: .5em;
 }
 
 
@@ -466,7 +468,7 @@ font-weight: bold;
 color: #ddd;
 }
 
-views-field-field-slider-image {
+.views-field-field-slider-image {
 border: 1px solid #ccc;	
 }
 
