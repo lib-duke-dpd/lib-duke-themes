@@ -297,7 +297,7 @@ text-decoration: underline;
 }
 #libraries {
 	color: #000000;
-	font-size: 80%;
+	font-size: 90%;
 	font-weight: bold;
 	line-height: 150%;
 	text-align: center;
@@ -387,7 +387,7 @@ text-decoration: underline;
 }
 #footerLinksA {
 	color: #000000;
-	font-size: 80%;
+	font-size: 90%;
 	font-weight: bold;
 	line-height: 160%;
 	text-align: left;
@@ -399,7 +399,7 @@ text-decoration: underline;
 	border-top: 1px dotted black;
 	border-bottom: 1px dotted black;
 	color: #000000;
-	font-size: 80%;
+	font-size: 90%;
 	font-weight: bold;
 	padding: 8px;
 	text-align: center;
