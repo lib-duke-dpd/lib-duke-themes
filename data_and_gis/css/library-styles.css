@@ -1,9 +1,32 @@
 /* Resets */
 
 html {
-	
+
 }
 
+* {
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+h1, h2, h3, h4, h2 a, h3 a, h4 a {
+	font-family: Interstate, Verdana, Arial, Helvetica, sans-serif;
+}
+
+h1, h2 {
+	color: #036;
+}
+
+a:hover, a:visited {
+	color: #369;
+}
+
+a:link, a:active {
+	color: #036;
+}
+
+a {
+	text-decoration: none;
+}
 
 
 /* CSS for Library Masthead */
@@ -417,7 +440,7 @@ text-decoration: underline;
 	padding: 0 !important;
 }
 	.pane-content ul.listNoDots li {
-		margin-left: 0;
+		margin-left: 2em;
 	}
 
 .pane-content a {
