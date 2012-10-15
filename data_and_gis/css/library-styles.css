@@ -218,7 +218,7 @@ color: #728302;
 text-transform: uppercase;
 font-size: 80%;
 text-align: center;
-padding: 4px 0;
+padding: 8px 0;
 display: block;
 border-right: 1px solid #C7C3C3;
 background: #E1DFD8 url(http://library.duke.edu/imgs/common/effects/background-horizontal-nav-e1dfd8.jpg) repeat-x 0 0;
@@ -236,7 +236,7 @@ margin-left: 0px;
 }
 
 #navigation ul.links li, #navigation ul.menu li {
-padding: 16px 0 0 0;
+padding: 8px 0 0 0;
 }
 
 
@@ -244,7 +244,7 @@ padding: 16px 0 0 0;
 
 .breadcrumb {
 font-family: Arial, Helvetica, sans-serif;
-font-size: 90%;
+font-size: 85%;
 font-weight: bold;
 padding: 0;
 margin: 4px 0 10px 0;
