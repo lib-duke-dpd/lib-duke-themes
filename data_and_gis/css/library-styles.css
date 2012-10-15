@@ -556,3 +556,11 @@ margin:0;
 	padding-left: 10px;
 	margin-left: 10px;
 }
+
+
+.imageFrame {
+	background: none repeat scroll 0 0 white;
+	border: 1px solid #CCC;
+	padding: 3px;
+	border-radius: 5px 5px 5px 5px;
+}
