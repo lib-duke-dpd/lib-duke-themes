@@ -1,8 +1,14 @@
-/* CSS for Library Masthead */
+/* Resets */
+
 html {
 	font-family: Calibri, Geneva, Helvetica, Arial, sans-serif;
-	font-size: 11pt;
+	font-size: 86%;
 }
+
+
+
+/* CSS for Library Masthead */
+
 #masthead { /* box holding banner/logo, banner search box, banner links, and ask us button */
 	font-size: 12px;
 	background-image: url(http://library.duke.edu/imgs/blue-note/header-gradient.gif);
