@@ -483,3 +483,11 @@ margin:0;
 
 
 
+/* Content Styles */
+
+.shadedBox {
+	background: url("http://library.duke.edu/imgs/common/effects/gradient_lighttan_105.jpg") repeat-x scroll left top #E8E6E0;
+	border: 1px solid #DCDAD4;
+	border-radius: 5px 5px 5px 5px;
+	padding: 5px 15px;
+}
