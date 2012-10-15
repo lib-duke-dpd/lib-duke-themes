@@ -131,15 +131,27 @@ function data_and_gis_preprocess_block(&$variables, $hook) {
   //}
 }
 
-/**
- * Modify breadcrumb trail.
- */
-function dataandgis_breadcrumb($variables) {
-  if (!empty($breadcrumb)) {
-    if ($breadcrumb[0]=='<a href="/">Home</a>') {
-      $breadcrumb[0]='<a href="http://library.duke.edu">Duke Libraries</a> &gt; <a href="/">Data and GIS Services</a>';
-    }
-    return '<div class="breadcrumb">'. implode(' » ', $breadcrumb) .'</div>';
-  }
+
+
+/* Modify breadcrumb trail */
+
+function data_and_gis_breadcrumb($variables) {
+	$breadcrumb = $variables['breadcrumb'];
+		if (!empty($breadcrumb)) {
+			
+			if ($breadcrumb[0]=='<a href="/">Home</a>') {
+				$breadcrumb[0]='<a href="http://library.duke.edu">Duke Libraries</a> &gt; <a href="/">Data and GIS Services</a>';
+			}
+			
+			// Adding the title of the current page to the breadcrumb.
+			$breadcrumb[] = drupal_get_title();
+		
+			// Provide a navigational heading to give context for breadcrumb links to
+			// screen-reader users. Make the heading invisible with .element-invisible.
+			$output = '<h2 class="element-invisible">' . t('You are here') . '</h2>';
+			$output .= '<div class="breadcrumb">' . implode(' » ', $breadcrumb) . '</div>';
+			
+		return $output;
+	}
 }
 
