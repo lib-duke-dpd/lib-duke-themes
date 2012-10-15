@@ -527,3 +527,15 @@ margin:0;
 	border-radius: 5px 5px 5px 5px;
 	padding: 5px 15px;
 }
+
+
+.panel-col-first {
+	border-right: 1px solid #E6E6E6;
+	padding-right: 10px;
+}
+
+
+.panel-col-last {
+	border-left: 1px solid #E6E6E6;
+	padding-left: 10px;
+}
