@@ -216,7 +216,7 @@ margin-left: -40px;
 text-decoration: none;
 color: #728302;
 text-transform: uppercase;
-font-size: 70%;
+font-size: 80%;
 text-align: center;
 padding: 4px 0;
 display: block;
@@ -295,7 +295,7 @@ text-decoration: underline;
 }
 #libraries {
 	color: #000000;
-	font-size: 80%;
+	font-size: 100%;
 	font-weight: bold;
 	line-height: 150%;
 	text-align: center;
@@ -308,7 +308,7 @@ text-decoration: underline;
 	min-height: 12px;
 	height: 1em;
 	color: #000000;
-	font-size: 80%;
+	font-size: 100%;
 	font-weight: bold;
 	padding: 10px;
 	text-align: center;
@@ -322,7 +322,7 @@ text-decoration: underline;
 	border: none;
 }
 #lastModified {
-	font-size: 80%;
+	font-size: 100%;
 	text-align: center;
 	padding: 15px 0px 0px 0px;
 	margin: 0px;
