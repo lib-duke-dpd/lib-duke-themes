@@ -78,7 +78,7 @@ a.skipLink { /* layout for skip navigation link */
 	text-align: right;
 }
 #bannerSearchImage {
-	margin-top: 0px;
+	margin-top: 3px;
 	padding-right: 17px;
 	margin-bottom: 4px;
 }
@@ -141,7 +141,7 @@ margin: 13px 10px 0px 8px;
 }
 #mastheadLinks { /* links in navigation bar below banner */
 	color: #000000;
-	font-size: 90%;
+	font-size: 100%;
 	font-weight: bold;
 }
 #mastheadLinks a:link,
