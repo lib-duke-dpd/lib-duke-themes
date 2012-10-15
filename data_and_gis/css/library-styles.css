@@ -113,10 +113,9 @@ margin: 13px 10px 0px 8px;
 }
 #bannerLinks {
 	color: #ffffff;
-	font-size: 80%;
+	font-size: 100%;
 	font-weight: bold;
 	padding-right: 8px;
-	margin-top: 0em;
 }
 
 #bannerLinks a:link,
@@ -295,7 +294,7 @@ text-decoration: underline;
 }
 #libraries {
 	color: #000000;
-	font-size: 100%;
+	font-size: 80%;
 	font-weight: bold;
 	line-height: 150%;
 	text-align: center;
