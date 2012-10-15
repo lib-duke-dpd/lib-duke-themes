@@ -583,9 +583,14 @@ margin:0;
 	border-radius: 5px 5px 5px 5px;
 }
 
-.button a {
+.button p {
 	text-align: center;
-	font-weight: bold;
 	font-size: 95%;
+}
+
+.button a {
+	
+	font-weight: bold;
 	text-transform: uppercase;
+	display: block;
 }
