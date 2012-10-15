@@ -136,7 +136,9 @@ function data_and_gis_preprocess_block(&$variables, $hook) {
 /* Modify breadcrumb trail */
 
 function data_and_gis_breadcrumb($variables) {
+	
 	$breadcrumb = $variables['breadcrumb'];
+		
 		if (!empty($breadcrumb)) {
 			
 			if ($breadcrumb[0]=='<a href="/">Home</a>') {
@@ -149,7 +151,7 @@ function data_and_gis_breadcrumb($variables) {
 			// Provide a navigational heading to give context for breadcrumb links to
 			// screen-reader users. Make the heading invisible with .element-invisible.
 			$output = '<h2 class="element-invisible">' . t('You are here') . '</h2>';
-			$output .= '<div class="breadcrumb">' . implode(' » ', $breadcrumb) . '</div>';
+			$output .= '<div class="breadcrumb">' . implode(' &gt; ', $breadcrumb) . '</div>';
 			
 		return $output;
 	}
