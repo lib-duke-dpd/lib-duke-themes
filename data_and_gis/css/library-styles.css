@@ -542,21 +542,26 @@ margin:0;
 }
 
 
-.panel-col-first {
+.panel-col {
+	
 	width: 30% !important;
 	border-right: 1px solid #E6E6E6;
 	padding-right: 10px;
 	margin-right: 10px;
-}
-
-
-.panel-col-last {
-	width: 30% !important;
 	border-left: 1px solid #E6E6E6;
 	padding-left: 10px;
 	margin-left: 10px;
 }
 
+.panel-col-first, .panel-col-last {
+	width: 33% !important;
+	border-right: none;
+	padding-right: 0;
+	margin-right: 0;
+	padding-left:0;
+	margin-left: 0;
+	
+}
 
 .imageFrame {
 	background: none repeat scroll 0 0 white;
