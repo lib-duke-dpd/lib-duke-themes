@@ -536,6 +536,11 @@ margin:0;
 	padding-bottom: .5em;
 }
 
+.shadedBox p {
+	margin-top: .5em;
+	margin-bottom: .5em;
+}
+
 
 .panel-col-first {
 	width: 30% !important;
