@@ -535,6 +535,7 @@ margin:0;
 	width: 30% !important;
 	border-right: 1px solid #E6E6E6;
 	padding-right: 10px;
+	margin-right: 10px;
 }
 
 
@@ -542,4 +543,5 @@ margin:0;
 	width: 30% !important;
 	border-left: 1px solid #E6E6E6;
 	padding-left: 10px;
+	margin-left: 10px;
 }
