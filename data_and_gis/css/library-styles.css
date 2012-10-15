@@ -452,8 +452,10 @@ text-decoration: underline;
 	list-style-type: none;
 	padding: 0 !important;
 }
+
 	.pane-content ul.listNoDots li {
 		margin-left: 2em;
+		margin-bottom: 1em;
 	}
 
 .pane-content a {
@@ -530,12 +532,14 @@ margin:0;
 
 
 .panel-col-first {
+	width: 31%;
 	border-right: 1px solid #E6E6E6;
 	padding-right: 10px;
 }
 
 
 .panel-col-last {
+	width: 31%;
 	border-left: 1px solid #E6E6E6;
 	padding-left: 10px;
 }
