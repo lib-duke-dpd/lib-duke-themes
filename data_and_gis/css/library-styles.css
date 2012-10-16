@@ -618,7 +618,7 @@ margin:0;
 }
 
 .twitter-feed-frontpage h2 {
-	font-size: 14pt;
+	font-size: 13pt;
 	color: #fff;
 	text-align: center;
 	display: block;
@@ -666,7 +666,7 @@ margin:0;
 
 .view-site-tweets .more-link {
 	display: block;
-	padding: 5px 10px 20px 10px;
+	padding: 5px 10px 35px 10px;
 	text-align: center;
 	background: #2daebf url('http://widgets.twimg.com/i/widget-logo.png') no-repeat top center;
 	border-radius: 0px 0px 5px 5px; 
