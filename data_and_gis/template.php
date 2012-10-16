@@ -170,7 +170,7 @@ function data_and_gis_breadcrumb($variables) {
  */
 function data_and_gis_preprocess_panels_pane($variables) {
 	watchdog('preprocess_panels_pane', $variables['pane']->type);
-	if ($variables['pane']->type == 'block') {
+	if ($variables['pane']->type == 'custom') {
 		watchdog('preprocess_panels_pane', $variables['pane']->subtype);
 	}
 }
