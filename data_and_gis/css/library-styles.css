@@ -618,12 +618,12 @@ margin:0;
 }
 
 .twitter-feed-frontpage h2 {
-	font-size: 16pt;
+	font-size: 14pt;
 	color: #fff;
 	text-align: center;
 	display: block;
 	margin:0;
-	padding:0 0 10px 0;
+	padding:0 0 5px 0;
 	-webkit-margin-before: 0;
 	-webkit-margin-after: 0;
 	background: #2daebf;
