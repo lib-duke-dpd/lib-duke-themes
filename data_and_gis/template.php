@@ -132,9 +132,14 @@ function data_and_gis_preprocess_block(&$variables, $hook) {
 }
 
 
-
-/* Modify breadcrumb trail */
-
+/**
+ * Implements theme_breadcrumb
+ * 
+ * Modify breadcrumb trail
+ *
+ * @param $variables
+ *   An array of variables to pass to the theme.
+ */
 function data_and_gis_breadcrumb($variables) {
 	
 	$breadcrumb = $variables['breadcrumb'];
@@ -157,3 +162,12 @@ function data_and_gis_breadcrumb($variables) {
 	}
 }
 
+/**
+ * Implements theme_preprocess_panels_pane()
+ *
+ * @param $variables
+ *   An array of variables to pass to the theme
+ */
+function data_and_gis_preprocess_panels_pane($variables) {
+	dpm('type: ' . $variables['pane']->type);
+}
