@@ -48,7 +48,9 @@ a {
 	width: 90% !important;	
 }
 
-
+.bottom-margin {
+	margin-bottom: 20px;	
+}
 
 
 /* CSS for Library Masthead */
