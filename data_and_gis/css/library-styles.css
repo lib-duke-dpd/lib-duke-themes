@@ -481,6 +481,10 @@ text-decoration: underline;
 
 /* Feature Text */
 
+.view-featured-slider {
+	margin-bottom: 20px;	
+}
+
 .featureText {
 position: absolute;
 right: 10px;
@@ -604,6 +608,10 @@ margin:0;
 	font-weight: bold;
 	text-transform: uppercase;
 	display: block;
+}
+
+.home-spacer {
+	margin-bottom: 50px;	
 }
 
 
