@@ -40,6 +40,17 @@ a {
 }
 
 
+
+
+/* Layout */
+
+.landing-page-right-sidebar {
+	width: 90% !important;	
+}
+
+
+
+
 /* CSS for Library Masthead */
 
 #masthead { /* box holding banner/logo, banner search box, banner links, and ask us button */
