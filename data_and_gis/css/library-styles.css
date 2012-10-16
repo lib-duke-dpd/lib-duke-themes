@@ -611,7 +611,7 @@ margin:0;
 }
 
 .home-spacer {
-	margin-bottom: 50px;	
+	margin-bottom: 85px;	
 }
 
 
@@ -695,3 +695,70 @@ margin:0;
 	float: left;
 	margin: 0 10px 10px 0;
 }
+
+
+/* Search Box */
+
+.boxShadow {
+	box-shadow: -4px 4px 2px 2px #888;
+	-moz-box-shadow: -4px 4px 2px 2px #888;
+	-webkit-box-shadow: -4px 4px 2px 2px #888;
+}
+
+div.exhibit-facet-header, div.exhibit-flowingFacet-header {
+	background: url(http://library.duke.edu/imgs/blue-note/tabularheaderback.jpg) 0px 0px repeat-x scroll #2E3B81;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: white;
+	border-top-width: 1px;
+	border-top-style: solid;
+	border-top-color: white;
+	box-shadow: rgba(0, 0, 0, 0.498039) 0px 1px 3px;
+	color: white;
+	padding: 5px 2px 5px 3px;
+}
+
+.bigBoldCapitals {
+	font-size: 140%;
+	font-weight: bold;
+	margin-left: 8px;
+	text-transform: uppercase;
+}
+
+div.exhibit-text-facet {
+	background-color: #F2F0EB;
+	border: 1px solid #DBD8D0;
+	border-image: initial;
+	padding: 3px;
+}
+
+.button3d, .button3d:visited {
+	border: none;
+	background: #0E1F6F url(http://library.duke.edu/imgs/common/effects/button-gradient-overlay.png) repeat-x;
+	display: inline-block;
+	padding: 5px 10px 6px;
+	color: white;
+	text-decoration: none;
+	font-weight: bold;
+	line-height: 1;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-box-shadow: 0 1px 3px rgba(0,0,0,0.5);
+	-webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+	text-shadow: 0 -1px 1px rgba(0, 0, 0, 0.25);
+	border-bottom: 1px solid rgba(0, 0, 0, 0.25);
+	position: relative;
+	cursor: pointer;
+	margin: 0;
+}
+
+.blue.button3d {
+	background-color: #2DAEBF;
+}
+
+.small.button3d {
+	font-size: 11px;
+}
+
+
+
