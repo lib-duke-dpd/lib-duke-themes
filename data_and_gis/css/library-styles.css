@@ -257,6 +257,43 @@ padding: 0 0 0 0;
 }
 
 
+
+/* Side nav */
+
+.right-nav ul {
+border-top: 1px solid #D3D8A5;
+list-style: none outside none;
+margin: 0 0 2em;
+width: 100%;
+padding-left: 0;
+}
+
+.right-nav ul li {
+border-bottom: 1px solid #D3D8A5;
+padding: 7px 0;
+font-size: 105%;
+line-height: 1.2em;
+list-style: none outside none;
+margin: 0.8em 0 0;
+}
+
+.right-nav a {
+color: #728302;
+background-color: white;
+padding-left: 10px;
+display: block;
+}
+
+.right-nav a:hover, .right-nav a.current {
+text-decoration: none;
+color: #001A57;
+display: block;
+background: white url(http://library.duke.edu/imgs/common/effects/bullet.gif) no-repeat 0 0.5em;
+}
+
+
+
+
 /* Breadcrumb */
 
 .breadcrumb {
@@ -276,6 +313,9 @@ color: #036;
 color: #369;
 text-decoration: underline;
 }
+
+
+
 
 
 
