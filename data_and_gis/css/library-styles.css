@@ -766,6 +766,12 @@ div.exhibit-text-facet {
 
 /* Tables */
 
+
+.infoTable {
+	margin-top: 0 !important;
+	margin-bottom: 0 !important;
+}
+
 .infoTable td {
 padding: .25em 1em .25em 1em;
 border-bottom: 1px dotted #DCDAD4;
