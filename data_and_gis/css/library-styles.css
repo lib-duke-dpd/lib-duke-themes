@@ -39,7 +39,9 @@ a {
 	text-decoration: none;
 }
 
-
+.allcaps {
+	text-transform: uppercase;	
+}
 
 
 
