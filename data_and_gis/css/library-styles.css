@@ -681,3 +681,9 @@ margin:0;
 .views-field-created-time {
 	color: #999;	
 }
+
+.views-field-profile-image-url {
+	display:inline;
+	float: left;
+	margin: 0 10px 10px 0;
+}
