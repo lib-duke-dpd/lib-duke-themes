@@ -133,7 +133,7 @@ function data_and_gis_preprocess_block(&$variables, $hook) {
 
 
 /**
- * Implements theme_breadcrumb
+ * Implements template_breadcrumbs
  * 
  * Modify breadcrumb trail
  *
@@ -163,11 +163,14 @@ function data_and_gis_breadcrumb($variables) {
 }
 
 /**
- * Implements theme_preprocess_panels_pane()
+ * Implements template_preprocess_panels_pane()
  *
  * @param $variables
  *   An array of variables to pass to the theme
  */
 function data_and_gis_preprocess_panels_pane($variables) {
-	dpm('type: ' . $variables['pane']->type);
+	watchdog('preprocess_panels_pane', $variables['pane']->type);
+	if ($variables['pane']->type == 'block') {
+		watchdog('preprocess_panels_pane', $variables['pane']->subtype);
+	}
 }
