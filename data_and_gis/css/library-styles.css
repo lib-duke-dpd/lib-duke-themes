@@ -48,6 +48,10 @@ a {
 	width: 90% !important;	
 }
 
+.home-spacer {
+	margin-bottom: 86px;	
+}
+
 .bottom-margin {
 	margin-bottom: 20px;	
 }
@@ -612,9 +616,7 @@ margin:0;
 	display: block;
 }
 
-.home-spacer {
-	margin-bottom: 85px;	
-}
+
 
 
 /* Twitter box */
