@@ -42,19 +42,7 @@ a {
 
 
 
-/* Layout */
 
-.landing-page-right-sidebar {
-	width: 90% !important;	
-}
-
-.home-spacer {
-	margin-bottom: 86px;	
-}
-
-.bottom-margin {
-	margin-bottom: 20px;	
-}
 
 
 /* CSS for Library Masthead */
@@ -766,3 +754,16 @@ div.exhibit-text-facet {
 
 
 
+/* Layout */
+
+.landing-page-right-sidebar {
+	width: 90% !important;	
+}
+
+.home-spacer {
+	margin-bottom: 86px;	
+}
+
+.bottom-margin {
+	margin-bottom: 20px;	
+}
