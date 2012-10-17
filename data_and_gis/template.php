@@ -174,7 +174,20 @@ function data_and_gis_preprocess_panels_pane($variables) {
 		watchdog('preprocess_panels_pane', print_r($variables['pane'], TRUE));
 	}
 	if ($variables['pane']->type == 'block') {
-		watchdog('preprocess_panels_pane', '*** block type ***');
-		watchdog('preprocess_panels_pane', $variables['pane']->subtype);
+		// Now that it has been determined that a 'block' type has 
+		// been detected, let' see if this is the "about menu", 
+		// and if so, attempt to apply an 'active' class on the 
+		// appropriate menu
+		if ($variables['pane']->subtype == 'menu-menu-about-us-menu') {
+			// TODO - create a function specifically for this task
+			// FOR NOW -- code it here
+			
+			// DEBUG, so we can see what keys are available to us 
+			// developers.
+			watchdog('preprocess_panels_pane | keys in vars array', print_r(array_keys($variables), TRUE));
+			watchdog('preprocess_panels_pane | keys in "pane" object', print_r(array_keys((array)$variables['pane']), TRUE));
+		}
+		#watchdog('preprocess_panels_pane', '*** block type ***');
+		#watchdog('preprocess_panels_pane', $variables['pane']->subtype);
 	}
 }
