@@ -50,14 +50,12 @@ function data_and_gis_preprocess_html(&$variables, $hook) {
  *   The name of the template being rendered ("page" in this case.)
  */
 function data_and_gis_preprocess_page(&$variables, $hook) {
-	watchdog('data_gis_preprocess_page with hook = ', $hook);
 	if (isset($variables['node']->type)) {
 		$variables['theme_hook_suggestions'][] = 'page__' . $variables['node']->type;
 		drupal_add_js(drupal_get_path('theme', 'data_and_gis') . '/js/exhibit-api.js?autoCreate=false');
 		drupal_add_js(drupal_get_path('theme', 'data_and_gis') . '/js/lens.js');
 		drupal_add_css(drupal_get_path('theme', 'data_and_gis') . '/css/simile-datagis.css');
 	}
-  #$variables['sample_variable'] = t('Lorem ipsum.');
 }
 // */
 
@@ -175,10 +173,6 @@ function data_and_gis_breadcrumb($variables) {
  *   An array of variables to pass to the theme
  */
 function data_and_gis_preprocess_panels_pane($variables) {
-	watchdog('preprocess_panels_pane', $variables['pane']->type);
-	if ($variables['pane']->type == 'custom') {
-		watchdog('preprocess_panels_pane', print_r($variables['pane'], TRUE));
-	}
 	if ($variables['pane']->type == 'block') {
 		// Now that it has been determined that a 'block' type has 
 		// been detected, let' see if this is the "about menu", 
@@ -191,18 +185,6 @@ function data_and_gis_preprocess_panels_pane($variables) {
 			// determine the current path (or destination)
 			$current_path = drupal_get_destination();
 			$current_path = $current_path['destination'];
-			// DEBUG, so we can see what keys are available to us 
-			// developers.
-			#watchdog('preprocess_panels_pane | keys in vars array', print_r(array_keys($variables), TRUE));
-			#watchdog('preprocess_panels_pane | keys in vars[content] array', print_r((array)$variables['content'], TRUE));
-			#kpr($variables);
-			// find all the variables :)
-			#kpr($variables['content']);
-			#kpr($variables['pane']);
-			#watchdog('preprocess_panels_pane | keys in display array', print_r(array_keys((array)$variables['display']), TRUE));
-			#kpr($variables['display']->context);
 		}
-		#watchdog('preprocess_panels_pane', '*** block type ***');
-		#watchdog('preprocess_panels_pane', $variables['pane']->subtype);
 	}
 }
