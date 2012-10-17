@@ -1,0 +1,156 @@
+/* ol.exhibit-tileView-body div.dataCollectionBox { */
+.exhibit-ui-protection div.dataCollectionBox {
+  margin: 0.5em 0 0 0;
+  position: relative;
+  padding-bottom: 1em;
+  border-bottom: 1px solid #dcdad4;
+
+}
+.exhibit-ui-protection div.titleBox { 
+
+	/* border-bottom: 1px dotted #dcdad4;  */
+	padding: 5px 0 5px 0; 
+	position: relative;
+	} 
+	
+div.shadedBox {
+	background: #e8e6e0 url(http://library.duke.edu/imgs/common/effects/gradient_lighttan_105.jpg) repeat-x top left; 
+	padding: 5px 15px; 
+	border: 1px solid #dcdad4;  
+	-moz-border-radius: 5px;
+	position: relative;
+ 	-webkit-border-radius: 5px; }
+ 	
+#page-column-left div.shadedBox { padding: 5px; }
+/* header clases for header row */
+.title { 
+	font-size: 13px;  
+	font-family: Interstate, Verdana, Arial, Helvetica, sans-serif;
+	  color: #003366;
+	font-weight: bold;
+}
+	
+.exhibit-ui-protection .url {
+
+  font-size: 12px;
+  font-family: Interstate, Verdana, Arial, Helvetica, sans-serif;
+  color: #003366;
+  background: #e8e6e0 url(/imgs/common/effects/gradient_lighttan_105.jpg) repeat-x top left;
+margin: 0 0 0 0;
+ border: 1px solid #dcdad4;
+ -moz-border-radius: 5px;
+ -webkit-border-radius: 5px;
+ padding: 5px;
+  
+}
+.title:hover { text-decoration: underline; color: #235f9c; cursor: pointer; }
+
+
+
+/* Details of Film Review */
+div.details {  display:none;  } 
+
+.caption {
+	font-weight: normal;
+	font-style: italic;
+	text-align: center;
+	color: #808080;
+}
+/*
+.exhibit-ui-protection div.url a {
+	font-weight: bold;
+	font-size: 110%;
+	margin: 0 0 0 1em;
+} */
+
+.exhibit-ui-protection div.row {
+	margin: 1em 0 0 0;
+
+/*	position: relative;
+	float: left;
+	clear: both; */
+}
+/*
+.exhibit-ui-protection div.abstract {
+	width: 100%;
+		width: 100%;
+	margin: 1em 0 0 1em;
+}
+.exhibit-ui-protection div.format { 
+	position: relative;
+	float: left;
+	margin: 1em 0 0 0;
+		width: 100%;
+}
+.exhibit-ui-protection div.subject {
+	position: relative;
+	float: left;
+	margin: 1em 0 0 1em;
+		width: 100%;
+}
+.exhibit-ui-protection div.keywords {
+	position: relative;
+	float: left;
+	margin: 1em 0 0 1em;
+	width: 100%;
+}
+*/
+.italic { font-style: italic; }
+.emphasized { font-weight: bold; font-style: italic; }
+.bigger { font-size: 120%;}
+.clearNoHeight { clear: both; height: 0px;}
+.grayText { color: #777;}
+
+/* copied from grid_global_stylesheet.css */
+div.shadedInner { background: #e8e6e0 url(/imgs/common/effects/gradient_lighttan_105.jpg) repeat-x top left;
+ padding: 5px 0px;
+ border: 1px solid #dcdad4;
+ -moz-border-radius: 5px;
+ -webkit-border-radius: 5px;
+ padding: 5px 5px;
+}
+#page-column-center { margin-left: 20px; margin-right: 20px; }
+
+/* left sidebar facet */
+div.exhibit-facet-header, div.exhibit-flowingFacet-header { 
+	color: white; 
+	background: url(http://library.duke.edu/imgs/blue-note/tabularheaderback.jpg) repeat-x #2e3b81; 
+	padding: 5px 2px 5px 3px;
+	border-top: 1px solid white;
+	border-bottom: 1px solid white;
+	-moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+	-webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+}
+div.exhibit-flowingFacet-value { margin-left: 10px; margin-bottom: 5px; }
+a.exhibit-flowingFacet-value-link { font-weight: bold; }
+
+/* center column header controls */
+div.exhibit-viewPanel-viewContainer { }
+span.exhibit-collectionSummaryWidget-results span { margin-right: 0.5em;}
+span.exhibit-collectionSummaryWidget-results span span.exhibit-collectionSummaryWidget-count { margin-right: 0;}
+div.exhibit-collectionView-header { }
+.exhibit-ui-protection div.exhibit-collectionView-header-sortControls {
+	padding: 5px 0 0 5px; 
+	background: url(http://library.duke.edu/imgs/common/effects/gradient_lighttan_105.jpg) repeat-x; padding: 10px 0; border-top: 1px solid #aaa; border-bottom: 1px solid #aaa; }
+div.exhibit-collectionView-header-sortControls .exhibit-action { 	
+	font-weight: bold; 
+	font-size: 14px;  }
+div.exhibit-facet-header-filterControl { 
+	width: 4em; text-align: right; vertical-align: top;}
+
+/* center column content body */
+div.exhibit-collectionView-group h1 { color: #000; font-size: 16px;}
+/* from wigit-projects.css */
+
+/* right sidebar facets */
+/*div.exhibit-facet-body-frame { background-color: #fff; } */
+div.exhibit-facet-body { background-color: #fff; }
+div.exhibit-facet-value-selected { background-color: #f2f0eb; border-top: 1px solid #dbd8d0; border-bottom: 1px solid #dbd8d0;}
+div.exhibit-facet-value-count { font-size:  }
+div.exhibit-facet-value-inner { max-width: 100%; }
+div.exhibit-facet-value-link { margin: 0; padding: 0; }
+div.exhibit-facet-value-checkbox { margin: 0; padding: 0; }
+div.exhibit-facet-value-checkbox img {  margin-top: -2px;}
+div.exhibit-text-facet {margin-bottom: 20px; background-color: #f2f0eb; padding: 3px; border: 1px solid #dbd8d0; }
+div.exhibit-text-facet input { width: 170px;}
+#label-facet { display: none; }
