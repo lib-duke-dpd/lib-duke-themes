@@ -188,7 +188,7 @@ function data_and_gis_preprocess_panels_pane($variables) {
 			watchdog('preprocess_panels_pane | keys in vars[content] array', print_r((array)$variables['content'], TRUE));
 			kpr($variables['content']);
 			watchdog('preprocess_panels_pane | keys in display array', print_r(array_keys((array)$variables['display']), TRUE));
-			watchdog('preprocess_panels_pane | keys in "pane" object', print_r(array_keys((array)$variables['pane']), TRUE));
+			kpr($variables['display']->context);
 		}
 		#watchdog('preprocess_panels_pane', '*** block type ***');
 		#watchdog('preprocess_panels_pane', $variables['pane']->subtype);
