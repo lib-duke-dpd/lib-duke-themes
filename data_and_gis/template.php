@@ -173,4 +173,8 @@ function data_and_gis_preprocess_panels_pane($variables) {
 	if ($variables['pane']->type == 'custom') {
 		watchdog('preprocess_panels_pane', print_r($variables['pane'], TRUE));
 	}
+	if ($variables['pane']->type == 'block') {
+		watchdog('preprocess_panels_pane', '*** block type ***');
+		watchdog('preprocess_panels_pane', $variables['pane']->subtype);
+	}
 }
