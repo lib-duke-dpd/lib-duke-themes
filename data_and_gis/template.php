@@ -185,7 +185,7 @@ function data_and_gis_preprocess_panels_pane($variables) {
 			// DEBUG, so we can see what keys are available to us 
 			// developers.
 			watchdog('preprocess_panels_pane | keys in vars array', print_r(array_keys($variables), TRUE));
-			watchdog('preprocess_panels_pane | keys in display array', print_r(array_keys($variables['display']), TRUE));
+			watchdog('preprocess_panels_pane | keys in display array', print_r(array_keys((array)$variables['display']), TRUE));
 			watchdog('preprocess_panels_pane | keys in "pane" object', print_r(array_keys((array)$variables['pane']), TRUE));
 		}
 		#watchdog('preprocess_panels_pane', '*** block type ***');
