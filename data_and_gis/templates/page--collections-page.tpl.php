@@ -2,7 +2,9 @@
 
 /**
  * @file
- * Bartik's theme implementation to display a single Drupal page.
+ * data_and_gis's theme implementation to display a single Drupal page.i
+ * This template is specific for a "Collections" page
+ * in which it will include HTML markup needed by the SIMILE Exhibit widget
  *
  * The doctype, html, head and body tags are not in this template. Instead they
  * can be found in the html.tpl.php template normally located in the
