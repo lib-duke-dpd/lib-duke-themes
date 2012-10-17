@@ -50,9 +50,9 @@ function data_and_gis_preprocess_html(&$variables, $hook) {
  *   The name of the template being rendered ("page" in this case.)
  */
 function data_and_gis_preprocess_page(&$variables, $hook) {
-	watchdog('data_gis_preprocess_page with hookk = ', $hook);
+	watchdog('data_gis_preprocess_page with hook = ', $hook);
 	if (isset($variables['node']->type)) {
-		$variables['theme_hook_suggestions'] = 'page__' . $variables['node']->type;
+		$variables['theme_hook_suggestions'][] = 'page__' . $variables['node']->type;
 	}
   #$variables['sample_variable'] = t('Lorem ipsum.');
 }
