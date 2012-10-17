@@ -186,10 +186,11 @@ function data_and_gis_preprocess_panels_pane($variables) {
 			// developers.
 			watchdog('preprocess_panels_pane | keys in vars array', print_r(array_keys($variables), TRUE));
 			watchdog('preprocess_panels_pane | keys in vars[content] array', print_r((array)$variables['content'], TRUE));
-			kpr($variables['content']);
-			kpr($variables['pane']);
-			watchdog('preprocess_panels_pane | keys in display array', print_r(array_keys((array)$variables['display']), TRUE));
-			kpr($variables['display']->context);
+			kpr($variables);
+			#kpr($variables['content']);
+			#kpr($variables['pane']);
+			#watchdog('preprocess_panels_pane | keys in display array', print_r(array_keys((array)$variables['display']), TRUE));
+			#kpr($variables['display']->context);
 		}
 		#watchdog('preprocess_panels_pane', '*** block type ***');
 		#watchdog('preprocess_panels_pane', $variables['pane']->subtype);
