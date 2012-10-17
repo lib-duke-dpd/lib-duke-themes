@@ -181,13 +181,15 @@ function data_and_gis_preprocess_panels_pane($variables) {
 		if ($variables['pane']->subtype == 'menu-menu-about-us-menu') {
 			// TODO - create a function specifically for this task
 			// FOR NOW -- code it here
-			
+		
+			// determine the current path (or destination)
+			$current_path = drupal_get_destination();
+			$current_path = $current_path['destination'];
 			// DEBUG, so we can see what keys are available to us 
 			// developers.
-			watchdog('preprocess_panels_pane | keys in vars array', print_r(array_keys($variables), TRUE));
-			watchdog('preprocess_panels_pane | keys in vars[content] array', print_r((array)$variables['content'], TRUE));
-			kpr($variables);
-			dpm(drupal_get_destination());
+			#watchdog('preprocess_panels_pane | keys in vars array', print_r(array_keys($variables), TRUE));
+			#watchdog('preprocess_panels_pane | keys in vars[content] array', print_r((array)$variables['content'], TRUE));
+			#kpr($variables);
 			// find all the variables :)
 			#kpr($variables['content']);
 			#kpr($variables['pane']);
