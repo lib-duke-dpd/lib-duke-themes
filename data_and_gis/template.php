@@ -186,8 +186,8 @@ function data_and_gis_preprocess_panels_pane($variables) {
 			// developers.
 			watchdog('preprocess_panels_pane | keys in vars array', print_r(array_keys($variables), TRUE));
 			watchdog('preprocess_panels_pane | keys in vars[content] array', print_r((array)$variables['content'], TRUE));
-			watchdog('preprocess_panels_pane | current path', drupal_get_destination());
 			kpr($variables);
+			dpm(drupal_get_destination());
 			// find all the variables :)
 			#kpr($variables['content']);
 			#kpr($variables['pane']);
