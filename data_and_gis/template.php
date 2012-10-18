@@ -56,17 +56,15 @@ function data_and_gis_preprocess_html(&$variables, $hook) {
  */
 function data_and_gis_preprocess_page(&$variables, $hook) {
 	if (isset($variables['node']->type) && $variables['node']->type == 'collections_page') {
-		//kpr(array_keys((array)$variables['node']));
-		kpr($variables['node']->field_json_feed_url);
 		$values = field_get_items('node', $variables['node'], 'field_json_feed_url');
-		kpr($values);
-		$field_json_feed_url = isset($variables['node']->field_json_feed_url) ? 
-			$variables['node']->field_json_feed_url['und'] : 
+		$field_json_feed_url = isset($values) ? 
+			$values[0]['value'] : 
 			'';
 		$variables['theme_hook_suggestions'][] = 'page__' . $variables['node']->type;
 		drupal_add_js(drupal_get_path('theme', 'data_and_gis') . '/js/exhibit-api.js?autoCreate=false');
 		drupal_add_js(drupal_get_path('theme', 'data_and_gis') . '/js/lens.js');
 		drupal_add_css(drupal_get_path('theme', 'data_and_gis') . '/css/simile-datagis.css');
+		// TODO add a js file that attaches on-load behavior
 		drupal_add_html_head(
 			array(
 				'#tag' => 'link',
