@@ -61,7 +61,7 @@ function data_and_gis_preprocess_page(&$variables, $hook) {
 			$values[0]['value'] : 
 			'';
 		$variables['theme_hook_suggestions'][] = 'page__' . $variables['node']->type;
-		$js_path = drupal_get_path('theme', 'data_and_gis') . '/js/exhibit-api.js';
+		$js_path = drupal_get_path('theme', 'data_and_gis') . '/js/simile/exhibit/exhibit-api.js';
 		$inline = <<<EOL
 			<script type="text/javascript" src="{$js_path}?autoCreate=false"></script>
 EOL;
@@ -84,8 +84,8 @@ EOL;
 			'exhibit-api'
 		);
 		*/
-		drupal_add_js(drupal_get_path('theme', 'data_and_gis') . '/js/exhibit-api.js?autoCreate=false');
-		drupal_add_js(drupal_get_path('theme', 'data_and_gis') . '/js/lens.js');
+		//drupal_add_js(drupal_get_path('theme', 'data_and_gis') . '/js/exhibit-api.js?autoCreate=false');
+		drupal_add_js(drupal_get_path('theme', 'data_and_gis') . '/js/simile/exhibit/lens.js');
 		drupal_add_js(drupal_get_path('theme', 'data_and_gis') . '/js/init-exhibit.js');
 		drupal_add_css(drupal_get_path('theme', 'data_and_gis') . '/css/simile-datagis.css');
 		// TODO add a js file that attaches on-load behavior

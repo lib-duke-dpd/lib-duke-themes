@@ -86,7 +86,6 @@
  * @see html.tpl.php
  */
 ?>
-<h2>Customized Page Header</h2>
 <div id="page">
 
   <header id="header" role="banner">
