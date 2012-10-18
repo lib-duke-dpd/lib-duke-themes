@@ -15,8 +15,9 @@
 					}
 					window.exhibit = Exhibit.create();
 					window.exhibit.configureFromDOM();
+			}
+			window.database = Exhibit.Database.create();
+			window.database.loadDataLinks(fDone);
 		}
-		window.database = Exhibit.Database.create();
-		window.database.loadDataLinks(fDone);
 	}
 })(jQuery);
