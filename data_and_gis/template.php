@@ -69,6 +69,7 @@ EOL;
 			array(
 				'#type' => 'markup',
 				'#markup' => $inline,
+				'weight' => '99999',
 			),
 			'exhibit-api'
 		);
