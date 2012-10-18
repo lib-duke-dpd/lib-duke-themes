@@ -48,10 +48,18 @@ function data_and_gis_preprocess_html(&$variables, $hook) {
  *   An array of variables to pass to the theme template.
  * @param $hook
  *   The name of the template being rendered ("page" in this case.)
+ * 
+ * Detect when a 'collections page' node is the focus of the rendering process:
+ * When that condition is true, add the appropriate js and css files, 
+ * as well as a <LINK> element to load in the google spreadsheet
+ * referenced by 'field_json_feed_url'
  */
 function data_and_gis_preprocess_page(&$variables, $hook) {
 	if (isset($variables['node']->type) && $variables['node']->type == 'collections_page') {
-		kpr(array_keys((array)$variables['node']));
+		//kpr(array_keys((array)$variables['node']));
+		$field_json_feed_url = isset($variables['node']->field_json_feed_url) ? 
+			$variables['node']->field_json_feed_url : 
+			'';
 		$variables['theme_hook_suggestions'][] = 'page__' . $variables['node']->type;
 		drupal_add_js(drupal_get_path('theme', 'data_and_gis') . '/js/exhibit-api.js?autoCreate=false');
 		drupal_add_js(drupal_get_path('theme', 'data_and_gis') . '/js/lens.js');
@@ -61,7 +69,7 @@ function data_and_gis_preprocess_page(&$variables, $hook) {
 				'#tag' => 'link',
 				'#attributes' => array(
 					'converter' => 'googleSpreadsheets',
-					'href' => '',
+					'href' => $field_json_feed_url,
 					'rel' => 'exhibit/data',
 					'type' => 'application/jsonp',
 				),
