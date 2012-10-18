@@ -16,7 +16,11 @@
 					window.exhibit = Exhibit.create();
 					window.exhibit.configureFromDOM();
 			}
-			window.database = Exhibit.Database.create();
+			try {
+				window.database = Exhibit.Database.create();
+			} catch(err) {
+				alert(err);
+			}
 			window.database.loadDataLinks(fDone);
 		}
 	}
