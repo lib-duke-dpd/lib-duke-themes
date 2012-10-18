@@ -50,11 +50,24 @@ function data_and_gis_preprocess_html(&$variables, $hook) {
  *   The name of the template being rendered ("page" in this case.)
  */
 function data_and_gis_preprocess_page(&$variables, $hook) {
-	if (isset($variables['node']->type)) {
+	if (isset($variables['node']->type) && $variables['node']->type == 'collections_page') {
+		kpr($variables);
 		$variables['theme_hook_suggestions'][] = 'page__' . $variables['node']->type;
 		drupal_add_js(drupal_get_path('theme', 'data_and_gis') . '/js/exhibit-api.js?autoCreate=false');
 		drupal_add_js(drupal_get_path('theme', 'data_and_gis') . '/js/lens.js');
 		drupal_add_css(drupal_get_path('theme', 'data_and_gis') . '/css/simile-datagis.css');
+		drupal_add_html_head(
+			array(
+				'#tag' => 'link',
+				'#attributes' => array(
+					'converter' => 'googleSpreadsheets',
+					'href' => '',
+					'rel' => 'exhibit/data',
+					'type' => 'application/jsonp',
+				),
+			),
+			'google_spreadsheet_converter'
+		);
 	}
 }
 // */
