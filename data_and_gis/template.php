@@ -57,6 +57,7 @@ function data_and_gis_preprocess_html(&$variables, $hook) {
 function data_and_gis_preprocess_page(&$variables, $hook) {
 	if (isset($variables['node']->type) && $variables['node']->type == 'collections_page') {
 		//kpr(array_keys((array)$variables['node']));
+		kpr($variables['node']->field_json_feed_url);
 		$field_json_feed_url = isset($variables['node']->field_json_feed_url) ? 
 			$variables['node']->field_json_feed_url : 
 			'';
