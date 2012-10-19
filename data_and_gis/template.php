@@ -66,13 +66,13 @@ function data_and_gis_preprocess_page(&$variables, $hook) {
 		$inline = <<<EOL
 			<script type="text/javascript" src="{$js_path}?autoCreate=false"></script>
 EOL;
-		#drupal_add_html_head(
-		#	array(
-		#		'#type' => 'markup',
-		#		'#markup' => $inline,
-		#	),
-		#	'exhibit-api'
-		#);
+		drupal_add_html_head(
+			array(
+				'#type' => 'markup',
+				'#markup' => $inline,
+			),
+			'exhibit-api'
+		);
 		/*
 		drupal_add_html_head(
 			array(
