@@ -235,11 +235,6 @@ function data_and_gis_preprocess_panels_pane(&$variables) {
 			$current_path = drupal_get_destination();
 			$current_path = $current_path['destination'];
 			
-			// inspect the block object and locate the menu items..
-			// TODO
-			kpr($variables);
-			kpr($current_path);
-			
 			foreach ($variables['content'] as $key => $val) {
 				if (substr($key, 0, 1) == '#') {
 					// ignore Drupal-style keys
