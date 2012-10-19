@@ -221,7 +221,7 @@ function data_and_gis_breadcrumb($variables) {
  * @param $variables
  *   An array of variables to pass to the theme
  */
-function data_and_gis_preprocess_panels_pane($variables) {
+function data_and_gis_preprocess_panels_pane(&$variables) {
 	if ($variables['pane']->type == 'block') {
 		// Now that it has been determined that a 'block' type has 
 		// been detected, let' see if this is the "about menu", 
