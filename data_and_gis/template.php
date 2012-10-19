@@ -234,6 +234,9 @@ function data_and_gis_preprocess_panels_pane($variables) {
 			// determine the current path (or destination)
 			$current_path = drupal_get_destination();
 			$current_path = $current_path['destination'];
+			
+			// inspect the block object and locate the menu items..
+			// TODO
 		}
 	}
 }
