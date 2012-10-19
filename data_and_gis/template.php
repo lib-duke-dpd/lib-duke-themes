@@ -238,6 +238,7 @@ function data_and_gis_preprocess_panels_pane($variables) {
 			// inspect the block object and locate the menu items..
 			// TODO
 			kpr($variables);
+			kpr($current_path);
 		}
 	}
 }
