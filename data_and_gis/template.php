@@ -95,7 +95,7 @@ EOL;
 			array(
 				'#tag' => 'link',
 				'#attributes' => array(
-					'ex:converter' => 'googleSpreadsheets',
+					'converter' => 'googleSpreadsheets',
 					'href' => $field_json_feed_url,
 					'rel' => 'exhibit/data',
 					'type' => 'application/jsonp',
