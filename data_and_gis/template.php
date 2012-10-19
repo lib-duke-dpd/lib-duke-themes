@@ -239,6 +239,26 @@ function data_and_gis_preprocess_panels_pane($variables) {
 			// TODO
 			kpr($variables);
 			kpr($current_path);
+			
+			foreach ($variables['content'] as $key => $val) {
+				if (substr($key, 0, 1) == '#') {
+					// ignore Drupal-style keys
+					continue;
+				}
+				// locate the 'active-trail' location in the class array
+				$where_is = array_search('active-trail', $variables['content'][$key]['#attributes']['class']);
+				
+				if ($variables['content'][$key]['#href'] == $current_path) {
+					if ($where_is === FALSE) {
+						$variables['content'][$key]['#attributes']['class'][] = 'active-trail';
+					}
+				} else {
+					if ($where_is !== FALSE) {
+						// remove the 'active-trail' css name from the class list
+						array_splice($variables['content'][$key]['#attributes']['class'], $where_is, 1);
+					}
+				}
+			}
 		}
 	}
 }
