@@ -145,7 +145,7 @@
 
   <div id="main">
 
-    <div id="content" class="column" role="main">
+    <div id="content" class="column">
       <?php print render($page['highlighted']); ?>
       <a id="main-content"></a>
       <?php print render($title_prefix); ?>
