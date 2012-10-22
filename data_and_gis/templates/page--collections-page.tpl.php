@@ -157,8 +157,53 @@
       <?php if ($action_links): ?>
         <ul class="action-links"><?php print render($action_links); ?></ul>
       <?php endif; ?>
+
+		<div>
+			<p><a class="masterToggle" href="#">Expand/collapse all &raquo;</a></p>
+			<div ex:collapsible="true" ex:expression=".label" ex:facetclass="AlphaRangeFacet" ex:facetlabel="Alphabetical" ex:interval="3" ex:role="facet" queryparamname="alpha">
+				&nbsp;</div>
+			<div>
+				<div expression=".subject" facetlabel="Subject" id="subject-facet" role="facet">
+					&nbsp;</div>
+				<div expression=".keywords" facetlabel="Keywords" id="keywords-facet" role="facet">
+					&nbsp;</div>
+				<div expression=".format" facetlabel="Format" id="format-facet" role="facet">
+					&nbsp;</div>
+				<div class="hidden" expression=".label" facetlabel="Label" id="label-facet" role="facet">
+					&nbsp;</div>
+			</div>
+		</div>
+		<div class="dataCollectionView">
+			<div ex:formats="date {template: 'MMM d, yyyy'}" ex:role="viewPanel">
+				<div ex:directions="ascending" ex:orders=".subject,.label" ex:possibleorders=".subject, .label, .format, .idno" ex:role="view">
+					&nbsp;</div>
+				<div ex:role="lens">
+					<div class="dataCollectionBox">
+						<div class="titleBox">
+							&nbsp;</div>
+						<div class="details">
+							<div class="detailsBox">
+								<div class="url">
+									&nbsp;</div>
+								<div class="row" ex:content=".abstract" ex:if-exists=".abstract">
+									&nbsp;</div>
+								<div class="row" ex:if-exists=".subject">
+									<span class="caption">Subject:</span></div>
+								<div class="row" ex:if-exists=".format">
+									<span class="caption">Format:</span> &lt;span ex:if-exists=&quot;.format&quot; ex:content=&quot;.format class=&quot; text&quot;=&quot;&quot;&gt;</div>
+								<div class="row" ex:if-exists=".keywords">
+									<span class="caption">Keywords:</span></div>
+								<div class="clear">
+									&nbsp;</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
 	  <div>
-      <?php print render($page['content']); ?>
+      <?php //print render($page['content']); ?>
 	  </div>
       <?php print $feed_icons; ?>
     </div><!-- /#content -->
