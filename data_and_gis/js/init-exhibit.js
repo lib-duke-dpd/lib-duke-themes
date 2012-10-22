@@ -19,7 +19,6 @@
 				window.exhibit.configureFromDOM();
 			};
 			window.database = Exhibit.Database.create();
-			debugger;
 			window.database.loadDataLinks(fDone);
 		}
 	}
