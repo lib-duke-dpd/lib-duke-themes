@@ -506,10 +506,11 @@ text-decoration: underline;
 .pane-content ul.listNoDots {
 	list-style-type: none;
 	padding: 0 !important;
+	margin-top: 0;
 }
 
 .pane-content ul.listNoDots li {
-
+	margin-bottom: .5em;
 }
 	
 	
