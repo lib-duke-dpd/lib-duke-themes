@@ -60,9 +60,7 @@ function data_and_gis_preprocess_page(&$variables, $hook) {
 		$field_json_feed_url = isset($values) ? 
 			$values[0]['value'] : 
 			'';
-		#$variables['theme_hook_suggestions'][] = 'html__' . $variables['node']->type;
 		$variables['theme_hook_suggestions'][] = 'page__' . $variables['node']->type;
-		#$js_path = drupal_get_path('theme', 'data_and_gis') . '/js/simile/exhibit/exhibit-api.js';
 		$js_path = 'http://api.simile-widgets.org/exhibit/2.2.0/exhibit-api.js';
 		$inline = <<<EOL
 			<script type="text/javascript" src="{$js_path}?autoCreate=false"></script>
@@ -74,23 +72,10 @@ EOL;
 			),
 			'exhibit-api'
 		);
-		/*
-		drupal_add_html_head(
-			array(
-				'#tag' => 'script',
-				'#attributes' => array(
-					'src' => drupal_get_path('theme', 'data_and_gis') . '/js/exhibit-api.js?autoCreate=false',
-					'type' => 'text/javascript',
-				),
-			),
-			'exhibit-api'
-		);
-		*/
-		//drupal_add_js(drupal_get_path('theme', 'data_and_gis') . '/js/exhibit-api.js?autoCreate=false');
-		//drupal_add_js('http://api.simile-widgets.org/exhibit/2.2.0/exhibit-api.js?autoCreate=false', 'external');
 		drupal_add_js(drupal_get_path('theme', 'data_and_gis') . '/js/simile/exhibit/lens.js');
 		drupal_add_js(drupal_get_path('theme', 'data_and_gis') . '/js/init-exhibit.js');
 		drupal_add_css(drupal_get_path('theme', 'data_and_gis') . '/css/simile-datagis.css');
+
 		// TODO add a js file that attaches on-load behavior
 		drupal_add_html_head(
 			array(

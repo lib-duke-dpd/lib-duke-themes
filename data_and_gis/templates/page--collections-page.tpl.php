@@ -158,7 +158,8 @@
         <ul class="action-links"><?php print render($action_links); ?></ul>
       <?php endif; ?>
 
-		<div>
+		<div class="exhibit-container">
+		<div class="exhibit-facets">
 			<p><a class="masterToggle" href="#">Expand/collapse all &raquo;</a></p>
 			<div ex:collapsible="true" ex:expression=".label" ex:facetclass="AlphaRangeFacet" ex:facetlabel="Alphabetical" ex:interval="3" ex:role="facet" queryparamname="alpha">
 				&nbsp;</div>
