@@ -20,6 +20,13 @@
 			};
 			window.database = Exhibit.Database.create();
 			window.database.loadDataLinks(fDone);
+			
+			$('.titleBox').live('click', function() {
+				$(this).next('.details').slideToggle('fast');
+			});
+			$('.masterToggle').live('click', function() {
+				$('.details').slideToggle('fast');
+			})
 		}
 	}
 })(jQuery);
