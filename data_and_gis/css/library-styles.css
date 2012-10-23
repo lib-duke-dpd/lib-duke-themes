@@ -508,7 +508,12 @@ text-decoration: underline;
 	padding: 0 !important;
 }
 
-	.pane-content ul.listNoDots li {
+.pane-content ul.listNoDots li {
+
+}
+	
+	
+.pane-content ul.listIndented li {
 		margin-left: 2em;
 		margin-bottom: 1em;
 	}
