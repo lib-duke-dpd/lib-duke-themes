@@ -837,8 +837,6 @@ li.feedItem {
 }
 
 
-/* test line */
-
 
 /* Tables */
 
@@ -854,7 +852,56 @@ border-bottom: 1px dotted #DCDAD4;
 margin:0;
 }
 
+table.dataTable {
+	padding-left: 10px;
+	margin-bottom: 0;
+	border-collapse: collapse;
+	border: 1px solid #036;
+	width: 100%;
+}
 
+table.dataTable tr {
+	page-break-inside: avoid;
+}
+
+table.dataTable td {
+	text-align: left;
+	vertical-align: text-top;
+	padding: 0.25em;
+	page-break-inside: avoid;
+}
+
+.tableTitle td {
+	border-bottom: 1px solid white;
+	font-weight: bold;
+	font-size: 20px;
+	font-variant: small-caps;
+	color: white;
+	background: #036;
+	font-family: Interstate,Verdana,Arial,Helvetica,sans-serif;
+}
+
+table.dataTable th {
+	color: white;
+	background-color: #036;
+	border-color: #036;
+	border-width: 1px 0;
+	border-style: solid;
+	text-align: left;
+	vertical-align: bottom;
+	padding: 0.25em;
+}
+
+table.dataTable tr.odd td {
+	background-color: #EEE;
+}
+
+td.noEventsScheduled {
+	text-align: center !important;
+	padding-top: 50px !important;
+	padding-bottom: 50px !important;
+	vertical-align: middle;
+}
 
 /* Layout */
 
