@@ -22,6 +22,8 @@
 			window.database = Exhibit.Database.create();
 			window.database.loadDataLinks(fDone);
 			
+			$('li#collections a').addClass('current');
+			$('#right-sidebar li#browse a').addClass('current');
 			$('.titleBox').live('click', function() {
 				$(this).next('.details').slideToggle('fast');
 			});
