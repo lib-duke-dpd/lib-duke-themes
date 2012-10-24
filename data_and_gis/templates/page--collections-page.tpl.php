@@ -194,54 +194,6 @@
 		  </div> 
 		 </div> 
 		</div> 
-		<div class="grid_3 omega">
-			<div class="exhibit-facet-header ">
-				<span class="bold">Search the Collections:</span>
-			</div>	
-			<div facetClass="TextSearch" role="facet" id="search-facet" queryParamName="search"></div> 	
-			<div id="right-sidebar">
-				<ul>
-					<li id="browse"><a href="index.html">Browse Collections</a></li>
-					<li id="new"><a href="new.html">New & Noteworthy</a></li>
-				</ul>
-			</div>
-				<div>
-				<ul id="topic" class="browse noaccordion">
-					<li id="browsetopic" class="collapse"><a class="heading" href="#">Selected Collections Licensed for Duke</a>
-						<ul>
-							<li class="collapse"><a href="/collections/gis/address_locators/index.html">Address Locators for Geocoding in ArcGIS</a></li>
-							<li class="collapse"><a href="/collections/gis/esri/tutorials.html" target="_blank">ArcGIS 9.3 Tutorial Data</a></li>
-							<li class="collapse"><a href="/collections/census10_nc.html" target="_blank">Census 2010 - North Carolina Counties and Tracts</a></li>
-							<li class="collapse"><a href="/collections/banks.html">Banks Cross National Time Series</a></li>
-							<li class="collapse"><a href="/collections/ccdb/index.html">City and County Data Books</a></li>
-							<li class="collapse"><a href="/collections/cac-vietnam.html">Combat Area Casualties Data</a></li>
-							<li class="collapse"><a href="/collections/dcas-casualties.html">Defense Casualty Analysis System Data</a></li>
-							<li class="collapse"><a href="/collections/gis/forest/index.html">Duke Forest GIS Layers</a></li>
-							<li class="collapse"><a href="/collections/gis/duke/index.html" target="_blank" title="Duke GIS">Duke University GIS Layers</a></li>
-							<li class="collapse"><a href="/collections/gis/durham/index.html" target="_blank" title="Durham GIS">Durham GIS Collection</a></li>
-										<li class="collapse"><a href="/collections/gis/durham/index_usda.html" target="_blank" title="Durham GIS">Durham Historical Aerial Photographs</a></li>
-							<li class="collapse"><a href="/collections/gis/esri/index.html">ESRI Data and Maps Collection</a></li>
-							<li class="collapse"><a href="/collections/euratlas_rome.html">Euratlas Ancient Rome Vector Map<br/></a></li>
-							<li class="collapse"><a href="/collections/euratlas.html">Euratlas Historical Political Boundaries of Europe</a></li>
-							<li class="collapse"><a href="/collections/gis/global_gis.html" title="Global GIS DVD (USGS)">Global GIS DVD (USGS)</a></li>
-							<li class="collapse"><a href="/collections/imfdots.html">IMF Direction of Trade Statistics</a></li>
-							<li class="collapse"><a href="/collections/icgr.html" title="ICRG">International Country Risk Guide Data</a></li>
-							<li class="collapse"><a href="/collections/iterate.html" target="_blank" title="ITERATE">ITERATE - International Terrorism Attributes of Terrorist Events</a></li>
-							<li class="collapse"><a href="/collections/gis/landsat.html" target="_blank">Landsat Imagery</a>&#160;- Selected Triangle-area images</li>
-							<li class="collapse"><a href="http://library.duke.edu/metasearch/db/id/DUK02968">Latinobarometer Data</a>&#160;</li>
-							<li class="collapse"><a href="/collections/lapop.html">Latin America Population Project Data (LAPOP)</a></li>
-							<li class="collapse"><a href="/collections/nss.html">National Sample Survey (India)</a></li>
-							<li class="collapse"><a href="/collections/polidata.html">Polidata (Election Results by Congressional District)</a>&#160;</li>
-							<li class="collapse"><a href="/duke-only/polk/">Polk New Vehicle Registration Data (Duke Only)</a></li>
-							<li class="collapse"><a href="/duke-only/polk/">Polk National Vehicle Population Profile by Segment (Duke Only)</a></li>
-							<li class="collapse"><a href="/collections/popest.html">Population Estimates (U.S.Census Bureau)</a></li>
-							<li class="collapse"><a href="/collections/stata_journal/index.html">The Stata Journal (Duke Only)</a></li>
-							<li class="collapse"><a href="/collections/podes.html">Village Potential Statistics (PODES) - Indonesia</a></li>
-						</ul>
-					</li>
-				</ul>
-				</div>		
-		</div>
 		</div>
 
 	  <div>
