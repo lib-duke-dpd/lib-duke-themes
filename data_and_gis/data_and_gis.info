@@ -61,6 +61,7 @@ stylesheets[all][] = css/nodes.css
 stylesheets[all][] = css/comments.css
 stylesheets[all][] = css/forms.css
 stylesheets[all][] = css/fields.css
+styelsheets[all][] = css/960.css
 stylesheets[all][] = css/library-styles.css
 stylesheets[all][] = css/print.css
 
