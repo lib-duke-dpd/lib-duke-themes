@@ -284,7 +284,9 @@ padding-left: 10px;
 display: block;
 }
 
-.right-nav a:hover, .right-nav a.current {
+.right-nav a:hover, 
+.right-nav a.current,
+.right-nav a.active {
 text-decoration: none;
 color: #001A57;
 display: block;
