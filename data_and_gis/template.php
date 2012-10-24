@@ -75,6 +75,7 @@ EOL;
 		drupal_add_js(drupal_get_path('theme', 'data_and_gis') . '/js/jquery_url.js');
 		drupal_add_js(drupal_get_path('theme', 'data_and_gis') . '/js/simile/exhibit/lens.js');
 		drupal_add_js(drupal_get_path('theme', 'data_and_gis') . '/js/init-exhibit.js');
+		drupal_add_css(drupal_get_path('theme', 'data_and_gis') . '/css/datagis.css');
 		drupal_add_css(drupal_get_path('theme', 'data_and_gis') . '/css/simile-datagis.css');
 
 		// TODO add a js file that attaches on-load behavior

@@ -1,0 +1,231 @@
+/* Uncomment these classes if using Data & GIS logo in masthead */
+/*  #dlLogo { background: url('http://library.duke.edu/imgs/banners/data-logo.png') no-repeat top left;  padding: 0; margin: 0; height: 72px; width:410px; } */
+/*	#dlLogo a { border: none; position: absolute; text-decoration: none;}  */
+/*	#dlLogo a span { visibility: hidden;}  */
+/*  	#logoLibrary a { height: 70px; left: 5px; top: 1px; width: 185px; position: absolute; }  */
+/*	#logoDG a { height: 70px; left: 190px; top: 1px; width: 220px; position: absolute;} */
+
+h1#pageTitle { font-family: Garamond, serif; font-size: 28px; margin-top: 0; }
+
+h3, h4 { color: #003366;}
+h3 { margin-top: 0; font-size: 16px;}
+h4 { font-size: 13px; }
+.clear4px { clear: both; height: 4px; }
+.clear8px { clear: both; height: 8px; }
+.clear10px { clear: both; height: 10px;}
+.bigTopMargin { margin-top: 2em;}
+.mediumTopMargin { margin-top: 1em;}
+.bigLeftMargin { margin-left: 60px;}
+.mediumLeftMargin { margin-left: 20px; }
+.mediumLeftIndent { padding-left: 1em; }
+.noBottomMargin { padding-bottom: 0 !important; margin-bottom: 0 !important; }
+.grayBorder { border-left: 1px solid #e6e6e6; padding-left: 1em;}
+.grayBorderRight{  border-right: 1px solid #e6e6e6; }
+.tanBorder { border-left: 1px solid #DCDAD4; padding-left: 1em; }
+.grayBorderRight{  border-right: 1px solid #e6e6e6; }
+.caption { font-size: 90%;  }
+.smallcaps { font-variant: small-caps;}
+.allcaps { text-transform: uppercase; }
+.bigBoldCapitals {
+    font-size: 140%;
+    font-weight: bold;
+    margin-left: 8px;
+    text-transform: uppercase;
+}
+.boxShadow {  
+	box-shadow: -4px 4px 2px 2px #888;
+	-moz-box-shadow: -4px 4px 2px 2px #888;
+	-webkit-box-shadow: -4px 4px 2px 2px #888;
+}
+.imageFrame {  
+	  background: none repeat scroll 0 0 #FFFFFF;
+    border: 1px solid #CCCCCC;
+    padding: 3px; 
+      border-radius: 5px 5px 5px 5px;  
+}
+/* shadedBox from about.css */
+div.shadedBox {
+    background: url("http://library.duke.edu/imgs/common/effects/gradient_lighttan_105.jpg") repeat-x scroll left top #E8E6E0;
+    border: 1px solid #DCDAD4;
+    border-radius: 5px 5px 5px 5px;
+    padding: 5px 15px;
+}
+.shadedBox h2 { border-bottom: 1px dotted #DCDAD4; padding-bottom: .5em;}
+.shadedBox h4 { margin-bottom: 5px; }
+.shadedBox ul { margin: 0; }
+.shadedBox p { margin: 0 0 1em 0;}
+.shadedBox a:link, .shadedBox a:active { color: #336699; }
+.aboutStyle h2 {
+color: #fff;
+ background: url(http://library.duke.edu/imgs/common/effects/gradient_blue_31.jpg) repeat-x top left #314197; margin-left: -16px; margin-right: -16px; padding: 10px 21px; border-top: 1px solid white; border-bottom: 1px solid white;
+ -moz-box-shadow: 0 1px 3px rgba(0,0,0,0.5);
+ -webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.5);
+}
+
+/* Homepage shadedBox styles */
+div#page-column-right .shadedBox ul {margin: 0 0 1.5em 0;}
+div#page-column-right .shadedBox ul li { margin: 0 0 .5em 0;}
+div#page-column-right .shadedBox ul.mediumSpacedItems li { margin: 0 0 1.5em 0;}
+div#page-column-right .shadedBox ul ul { margin: 0 0 0 1em;}
+#browse .shadedBox { margin-right: 10px !important; padding-right: 8px;}
+#browse h4 { margin-top: 2px; margin-bottom: 2px; }
+#newnote h4 { padding-top: 5px;}
+div#newnote { margin: 0 0 5px 5px; }
+/* News */
+
+div#newsImageDiv img { margin-left: 20px; }
+
+/* Events table */
+table.dataTable { margin-bottom: 0; }
+table.dataTable { padding-left: 10px; }
+.tableTitle td { border-bottom: 1px solid #fff;  font-weight: bold; font-size: 20px; font-variant: small-caps; color: #fff; background: #003366; font-family: Interstate,Verdana,Arial,Helvetica,sans-serif; }
+td.eventTitle { font-weight: bold; }
+td.noEventsScheduled { text-align: center !important; padding-top: 50px !important; padding-bottom: 50px !important; vertical-align: middle;}
+table.dataTable td.eventTime { width: 120px;}
+table.dataTable td.eventDate { width: 100px;}
+table.dataTable td.eventURL { width: 50px}
+table.dataTable td.eventTitle { width: 240px; }
+table.dataTable td.eventLocation { width: 169px; }
+
+/* Blog feed */
+div#blog { min-height: 170px;}
+.feedItem { margin-bottom: 1.5em; }
+.feedItemTitle { font-weight: bold; font-size: 105%;  }
+.dateCaption { font-size: 85%; color: #888;}
+
+/* About Us */
+div#computingCluster { margin: 15px 20px 0 0; } 
+div#consultingServices { margin: 40px 20px 10px 0; }
+td.info { padding-left: 1em; }
+.infoTable td { padding: .5em 1em .5em 1em;  border-bottom: 1px dotted #DCDAD4;}
+.infoTable {width: 100%; margin:0; }
+.infoTable tr.last td { border-bottom: none;}
+.infoTable a { font-weight: bold;}
+table.simpleColumns { width:100%; background: #fff; }
+table.simpleColumns td { width: 33%; vertical-align: top; border-right: 1px solid #e6e6e6; padding-right: 4px;}
+table.simpleColumns td:last-child { border: none; }
+table.simpleColumns ul li { margin-left: 2em; }
+table.simpleColumns td h2 { margin-left: .5em; }
+table.simpleColumns td: first-child h2 { margin-left: 0; }
+/* About Us - Staff */
+table.staffTable { width: 630px; border-bottom: 1px dotted #e6e6e6;}
+table.staffTable caption { text-align: left; }
+table.staffTable td { width: 210px; padding-left: 10px; vertical-align: top; padding-top: 10px; }
+table.staffTable tr:last-child td { padding-bottom: 10px;}
+table.staffTable td.intro { text-align: left; padding-top: 0; padding-bottom: 5px; font-style: italic;}
+table.staffTable td:first-child { padding-left: 0;}
+table.staffTable td p { margin: .1em; }
+table.staffTable td p.staffName { text-transform: uppercase; font-weight: bold; margin-bottom: .2em;}
+table.staffTable td p.staffTitle { font-weight: bold;}
+/* Collections - Simile styles*/
+div.exhibit-facet-header, div.exhibit-flowingFacet-header {
+    background: url("http://library.duke.edu/imgs/blue-note/tabularheaderback.jpg") repeat-x scroll 0 0 #2E3B81;
+    border-bottom: 1px solid white;
+    border-top: 1px solid white;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 5px 2px 5px 3px;
+}
+div.exhibit-text-facet {
+    background-color: #F2F0EB;
+    border: 1px solid #DBD8D0;
+    padding: 3px;
+}
+div.exhibit-text-facet input#search { margin-left: 3px;}
+div#search-facet { width: 100%; }
+div#search-facet div.exhibit-text-facet input { width: 190px !important; }
+div#page-column-right #right-sidebar ul li {
+    border-bottom: 1px solid #D3D8A5;
+    font-size: 105%;
+    line-height: 1.2em;
+    list-style: none outside none;
+    margin: 0.8em 0 0;
+    padding: 7px 0;
+}
+
+/* Guides */
+div#middleColumn { 
+	padding-left: 10px; 
+	padding-right: 10px; 
+	border-left: 1px solid #e6e6e6;
+	border-right: 1px solid #e6e6e6;
+}
+div#page-column-right #courseGuides h2 {
+    font-size: 14px;
+    background: #fff;
+    color: #003366;
+    margin-bottom: 0.5em;
+    margin-top: 0.75em;
+    border: none;
+    box-shadow: none;
+}
+div#page-column-right #courseGuides ul li {
+	line-height: 1em;
+	list-style: none outside none;
+	padding-left: 1em;
+	text-indent: -1em;
+	margin-bottom: 1em;
+}
+/* Homepage slides */
+#myslides a.slideLink { height: 300px; width: 700px; }
+#myslides div.featureBackground { top: 30px !important; height: 140px !important;}
+#myslides div.featureText { top:30px !important;}
+#myslides div.featureText p { font-size: 14px;}
+#myslides div.featureText a { color: #ddd; }
+
+div.mainFeatureImage { background-repeat: no-repeat; background-position: top left; }
+
+/* Homepage & News - Twitter styles */
+#tweets { 
+	margin-bottom: 10px;	width: 220px;
+}
+
+#tweets .twtr-hd { display: none; }
+#tweets .twtr-ft {display: none; }
+.shortTwitterWidget, .tallTwitterWidget { background: #2DAEBF; }
+.shortTwitterWidget { height: 280px !important; overflow: hidden;}
+.tallTwitterWidget {  height: 440px !important; overflow: hidden;} 
+#tweets .header h1, #tweets .header h2 { margin-bottom: 0;}
+#tweets .header, #tweets .footer  { 
+	background: #2DAEBF; 
+	color: #fff; 
+	width: 220px; 	
+	text-align: center; }
+.shortTwitterWidget, .tallTwitterWidget { 
+	padding: 5px 0 0 0;
+-webkit-border-radius: 6px;
+-moz-border-radius: 6px;
+border-radius: 6px;
+}
+#tweets .largeFooter { padding: 5px 0 5px 0; }
+#tweets .shortFooter { padding: 5px 0 5px 0; }
+#tweets .shortFooter .icon img { padding: 2px 0 0 20px;}
+#tweets .shortFooter .icon span { padding-left: 40px; }
+#tweets .header h2, #tweets .header h2 a, #tweets .header h1, #tweets .header h1 a { color: #fff;}
+#tweets .twtr-bd { padding: 0 6px;}
+#tweets .twtr-doc { border-radius: 0;}
+#page-column-right .tallTwitterWidget #tweetFeed ul.jta-tweet-list { margin-bottom: 1em !important;}
+ul.jta-tweet-list li { list-style-type: none !important; list-style-image: none !important;}
+
+/* override grid_global_stylesheet.css */
+
+ul#topic li#browsetopic ul li {
+	font-size: 95%;
+	margin-left: 10px;
+	margin-right: 5px;
+}
+
+/* override about.css */
+div.featureBackground {
+background: #444;
+border: 1px solid #333;
+}
+
+/* staff profiles */
+div.staffMember { border-bottom: 1px solid #ccc; margin: 15px 0; }
+div.staffMember img { border: 1px solid #ccc; padding: 2px; float-left; margin: 0 15px 0 0; float: left;}
+
+div.staffInfo { float: left; display: block; }
+	h3.staffName { font-size: 16px;}
+span.fieldName { font-weight: bold;}
+div.staffBio { clear: both;  padding: 10px 0; margin: 10px 0; font-size: 11.5px;}
