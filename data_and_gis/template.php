@@ -77,6 +77,7 @@ EOL;
 		drupal_add_js(drupal_get_path('theme', 'data_and_gis') . '/js/init-exhibit.js');
 		drupal_add_css(drupal_get_path('theme', 'data_and_gis') . '/css/datagis.css');
 		drupal_add_css(drupal_get_path('theme', 'data_and_gis') . '/css/simile-datagis.css');
+		drupal_add_css('http://library.duke.edu/css/main/data/horizontal-nav.css', 'external');
 
 		// TODO add a js file that attaches on-load behavior
 		drupal_add_html_head(
