@@ -2,7 +2,7 @@
 
 /**
  * @file
- * data_and_gis's theme implementation to display a single Drupal page.i
+ * data_and_gis's theme implementation to display the 'Collections' landing page.
  * This template is specific for a "Collections" page
  * in which it will include HTML markup needed by the SIMILE Exhibit widget
  *
@@ -92,7 +92,7 @@
 
 
 	<!--- START Library Masthead --->
-	
+	<!-- TODO move this block of HTML code to the html.tpl.php file -->
 	<div id="masthead">
 	<a class="skipLink" href="#contentBox">Skip to Main Content</a>
 	
@@ -129,7 +129,7 @@
 	
 	<div id="mastheadShadow">&nbsp;</div>
 
-	
+	<!-- END TODO proposal -->
 	<!--- END Library Masthead --->
 	
 	<?php print $breadcrumb; ?>
