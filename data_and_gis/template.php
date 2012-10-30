@@ -56,6 +56,7 @@ function data_and_gis_preprocess_html(&$variables, $hook) {
  */
 function data_and_gis_preprocess_page(&$variables, $hook) {
 	$page = page_manager_get_current_page();
+	kpr($page);
 	// TODO -- add debugging when needed
 	if (isset($variables['node']->type) && $variables['node']->type == 'collections_page') {
 		$values = field_get_items('node', $variables['node'], 'field_json_feed_url');
