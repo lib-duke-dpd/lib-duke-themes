@@ -62,7 +62,7 @@ function data_and_gis_preprocess_page(&$variables, $hook) {
 			$values[0]['value'] : 
 			'';
 		$variables['theme_hook_suggestions'][] = 'page__' . $variables['node']->type;
-		$js_path = 'http://api.simile-widgets.org/exhibit/2.2.0/exhibit-api.js';
+		$js_path = 'https://api.simile-widgets.org/exhibit/2.2.0/exhibit-api.js';
 		$inline = <<<EOL
 			<script type="text/javascript" src="{$js_path}?autoCreate=false"></script>
 EOL;
