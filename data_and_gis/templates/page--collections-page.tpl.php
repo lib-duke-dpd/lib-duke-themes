@@ -174,7 +174,7 @@
 					&nbsp;</div>
 			</div>
 		</div>
-		<div class="dataCollectionView grid_5"> 
+		<div class="dataCollectionView grid_6"> 
 		<div ex:role="viewPanel" ex:formats="date {template: 'MMM d, yyyy'}"> 
 		<div ex:role="view" ex:orders=".subject,.label" ex:directions="ascending" ex:possibleOrders=".subject, .label, .format, .idno" ></div> 
 		  <div ex:role="lens"> 
