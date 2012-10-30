@@ -106,6 +106,7 @@ EOL;
  * @param $hook
  *   The name of the template being rendered ("node" in this case.)
  */
+/* Delete this line to expose the function
 function data_and_gis_preprocess_node(&$variables, $hook) {
 	watchdog('preprocess_node', 'made it');
   $variables['sample_variable'] = t('Lorem ipsum.');
@@ -117,6 +118,7 @@ function data_and_gis_preprocess_node(&$variables, $hook) {
     $function($variables, $hook);
   }
 }
+// */
 
 /**
  * Override or insert variables into the comment templates.
