@@ -53,7 +53,7 @@
 			});
 			$('ul.browse li a.heading').click(function() {
 				var parent = this.parentNode;
-				$(this).next().slideToggle('fast');
+				$(this).next('ul').slideToggle('fast');
 				if($(parent).hasClass('expand')){
 					$(parent).removeClass().addClass("collapse");
 				} else {
