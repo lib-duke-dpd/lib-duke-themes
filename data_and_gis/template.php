@@ -57,6 +57,7 @@ function data_and_gis_preprocess_html(&$variables, $hook) {
 function data_and_gis_preprocess_page(&$variables, $hook) {
 	$page = page_manager_get_current_page();
 	if (!empty($page)) {
+		kpr($page);
 		// determine of this page has a "simile" context
 		$page_conf = $page['handler']->conf;	// I believe this represents the "variant" to be displayed
 		if (!empty($page_conf['display'])) {
