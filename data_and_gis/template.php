@@ -120,7 +120,7 @@ EOL;
  * @param $jsonfeedurl
  *   The URL for the json data source (needed by Simile)
  */
-function _data_and_gis_enable_simile_widget($jsonfeedurl) {
+function _data_and_gis_enable_simile_exhibit($jsonfeedurl) {
 	$js_path = 'http://api.simile-widgets.org/exhibit/2.2.0/exhibit-api.js';
 	$inline = sprintf('<script type="text/javascript" src="%s?autoCreate=false"></script>', $js_path);
 	drupal_add_html_head(
