@@ -70,45 +70,12 @@ function data_and_gis_preprocess_page(&$variables, $hook) {
 	
 	// TODO -- add debugging when needed
 	if (isset($variables['node']->type) && $variables['node']->type == 'collections_page') {
-		/*
 		$values = field_get_items('node', $variables['node'], 'field_json_feed_url');
 		$field_json_feed_url = isset($values) ? 
 			$values[0]['value'] : 
 			'';
+		_data_and_gis_enable_simile_exhibit($field_json_feed_url);
 		$variables['theme_hook_suggestions'][] = 'page__' . $variables['node']->type;
-		$js_path = 'http://api.simile-widgets.org/exhibit/2.2.0/exhibit-api.js';
-		$inline = <<<EOL
-			<script type="text/javascript" src="{$js_path}?autoCreate=false"></script>
-EOL;
-		drupal_add_html_head(
-			array(
-				'#type' => 'markup',
-				'#markup' => $inline,
-			),
-			'exhibit-api'
-		);
-		drupal_add_js(drupal_get_path('theme', 'data_and_gis') . '/js/jquery_url.js');
-		drupal_add_js(drupal_get_path('theme', 'data_and_gis') . '/js/simile/exhibit/lens.js');
-		drupal_add_js(drupal_get_path('theme', 'data_and_gis') . '/js/init-exhibit.js');
-		drupal_add_css(drupal_get_path('theme', 'data_and_gis') . '/css/datagis.css');
-		drupal_add_css(drupal_get_path('theme', 'data_and_gis') . '/css/simile-datagis.css');
-		drupal_add_css('http://library.duke.edu/css/main/data/horizontal-nav.css', 'external');
-
-		// TODO add a js file that attaches on-load behavior
-		drupal_add_html_head(
-			array(
-				'#tag' => 'link',
-				'#attributes' => array(
-					'converter' => 'googleSpreadsheets',
-					'href' => $field_json_feed_url,
-					'rel' => 'exhibit/data',
-					'type' => 'application/jsonp',
-				),
-				'#weight' => '99999',
-			),
-			'google_spreadsheet_converter'
-		);
-		*/
 	}
 }
 // */
