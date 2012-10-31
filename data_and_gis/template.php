@@ -57,9 +57,7 @@ function data_and_gis_preprocess_html(&$variables, $hook) {
 function data_and_gis_preprocess_page(&$variables, $hook) {
 	$page = page_manager_get_current_page();
 	if (!empty($page)) {
-		kpr($page);
 		// determine of this page has a "simile" context
-		$display = $page['handler']->conf['display'];
 		$conf = $page['handler']->conf;
 		foreach ($conf['contexts'] as $context) {
 			if ($context['name'] == 'simile_exhibit') {
