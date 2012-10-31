@@ -61,7 +61,7 @@ function data_and_gis_preprocess_page(&$variables, $hook) {
 		// determine of this page has a "simile" context
 		$display = $page['handler']->conf['display'];
 		$conf = $page['handler']->conf;
-		foreach ($conf->contexts as $context) {
+		foreach ($conf['contexts'] as $context) {
 			if ($context['name'] == 'simile_exhibit') {
 				// we have detected the need to include the SIMILE Exhibit widget for this
 				// page.  Please include all the relevant meta links, JS, and CSS references.
