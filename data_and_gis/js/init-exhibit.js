@@ -1,7 +1,6 @@
 (function($){
 	Drupal.behaviors.data_and_gis = {
 		attach: function(context, settings) {
-			debugger;
 			var fDone = function() {
 				var params = SimileAjax.parseURLParameters();
 				var options = ["keywords", "format", "subject","label"];
