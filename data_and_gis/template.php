@@ -59,44 +59,13 @@ function data_and_gis_preprocess_page(&$variables, $hook) {
 	if (!empty($page)) {
 		kpr($page);
 		// determine of this page has a "simile" context
-		$page_conf = $page['handler']->conf;	// I believe this represents the "variant" to be displayed
-		if (!empty($page_conf['display'])) {
-			# TODO fix the code below for better organization
-			foreach ($page_conf['display']->context as $context) {
-				if ($context->title == 'Simile') {
-					// OK, this is where all of the JS and CSS files for the Simile Exhibit widget need
-					// to be added.
-					$js_path = 'http://api.simile-widgets.org/exhibit/2.2.0/exhibit-api.js';
-					$inline = sprintf('<script type="text/javascript" src="%s?autoCreate=false"></script>', $js_path);
-					drupal_add_html_head(
-						array(
-							'#type' => 'markup',
-							'#markup' => $inline,
-						),
-						'exhibit-api'
-					);
-					drupal_add_js(drupal_get_path('theme', 'data_and_gis') . '/js/jquery_url.js');
-					drupal_add_js(drupal_get_path('theme', 'data_and_gis') . '/js/simile/exhibit/lens.js');
-					drupal_add_js(drupal_get_path('theme', 'data_and_gis') . '/js/init-exhibit.js');
-					drupal_add_css(drupal_get_path('theme', 'data_and_gis') . '/css/datagis.css');
-					drupal_add_css(drupal_get_path('theme', 'data_and_gis') . '/css/simile-datagis.css');
-					drupal_add_css('http://library.duke.edu/css/main/data/horizontal-nav.css', 'external');
-
-					// TODO add a js file that attaches on-load behavior
-					drupal_add_html_head(
-						array(
-							'#tag' => 'link',
-							'#attributes' => array(
-								'converter' => 'googleSpreadsheets',
-								'href' => $field_json_feed_url,
-								'rel' => 'exhibit/data',
-								'type' => 'application/jsonp',
-							),
-							'#weight' => '99999',
-						),
-						'google_spreadsheet_converter'
-					);
-				}
+		$display = $page['handler']->conf['display'];
+		$conf = $page['handler']->conf;
+		foreach ($conf->contexts as $context) {
+			if ($context['name'] == 'simile_exhibit') {
+				// we have detected the need to include the SIMILE Exhibit widget for this
+				// page.  Please include all the relevant meta links, JS, and CSS references.
+				_data_and_gis_enable_simile_exhibit($context['jsonfeedurl']);
 			}
 		}
 	}
@@ -145,6 +114,46 @@ EOL;
 	}
 }
 // */
+
+/**
+ * Enable a Simile Exhibit widget.
+ * add all of the js, css and additional <LINK> references
+ *
+ * @param $jsonfeedurl
+ *   The URL for the json data source (needed by Simile)
+ */
+function _data_and_gis_enable_simile_widget($jsonfeedurl) {
+	$js_path = 'http://api.simile-widgets.org/exhibit/2.2.0/exhibit-api.js';
+	$inline = sprintf('<script type="text/javascript" src="%s?autoCreate=false"></script>', $js_path);
+	drupal_add_html_head(
+		array(
+			'#type' => 'markup',
+			'#markup' => $inline,
+		),
+		'exhibit-api'
+	);
+	drupal_add_js(drupal_get_path('theme', 'data_and_gis') . '/js/jquery_url.js');
+	drupal_add_js(drupal_get_path('theme', 'data_and_gis') . '/js/simile/exhibit/lens.js');
+	drupal_add_js(drupal_get_path('theme', 'data_and_gis') . '/js/init-exhibit.js');
+	drupal_add_css(drupal_get_path('theme', 'data_and_gis') . '/css/datagis.css');
+	drupal_add_css(drupal_get_path('theme', 'data_and_gis') . '/css/simile-datagis.css');
+	drupal_add_css('http://library.duke.edu/css/main/data/horizontal-nav.css', 'external');
+
+	// TODO add a js file that attaches on-load behavior
+	drupal_add_html_head(
+		array(
+			'#tag' => 'link',
+			'#attributes' => array(
+				'converter' => 'googleSpreadsheets',
+				'href' => $jsonfeedurl,
+				'rel' => 'exhibit/data',
+				'type' => 'application/jsonp',
+			),
+			'#weight' => '99999',
+		),
+		'google_spreadsheet_converter'
+	);
+}
 
 /**
  * Override or insert variables into the node templates.
