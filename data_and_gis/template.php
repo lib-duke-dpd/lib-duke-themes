@@ -56,9 +56,52 @@ function data_and_gis_preprocess_html(&$variables, $hook) {
  */
 function data_and_gis_preprocess_page(&$variables, $hook) {
 	$page = page_manager_get_current_page();
-	kpr($page);
+	if (!empty($page)) {
+		// determine of this page has a "simile" context
+		$page_conf = $page['handler']->conf;	// I believe this represents the "variant" to be displayed
+		if (!empty($page_conf['display'])) {
+			# TODO fix the code below for better organization
+			foreach ($page_conf['display']->context as $context) {
+				if ($context->title == 'Simile') {
+					// OK, this is where all of the JS and CSS files for the Simile Exhibit widget need
+					// to be added.
+					$js_path = 'http://api.simile-widgets.org/exhibit/2.2.0/exhibit-api.js';
+					$inline = sprintf('<script type="text/javascript" src="%s?autoCreate=false"></script>', $js_path);
+					drupal_add_html_head(
+						array(
+							'#type' => 'markup',
+							'#markup' => $inline,
+						),
+						'exhibit-api'
+					);
+					drupal_add_js(drupal_get_path('theme', 'data_and_gis') . '/js/jquery_url.js');
+					drupal_add_js(drupal_get_path('theme', 'data_and_gis') . '/js/simile/exhibit/lens.js');
+					drupal_add_js(drupal_get_path('theme', 'data_and_gis') . '/js/init-exhibit.js');
+					drupal_add_css(drupal_get_path('theme', 'data_and_gis') . '/css/datagis.css');
+					drupal_add_css(drupal_get_path('theme', 'data_and_gis') . '/css/simile-datagis.css');
+					drupal_add_css('http://library.duke.edu/css/main/data/horizontal-nav.css', 'external');
+
+					// TODO add a js file that attaches on-load behavior
+					drupal_add_html_head(
+						array(
+							'#tag' => 'link',
+							'#attributes' => array(
+								'converter' => 'googleSpreadsheets',
+								'href' => $field_json_feed_url,
+								'rel' => 'exhibit/data',
+								'type' => 'application/jsonp',
+							),
+							'#weight' => '99999',
+						),
+						'google_spreadsheet_converter'
+					);
+				}
+			}
+		}
+	
 	// TODO -- add debugging when needed
 	if (isset($variables['node']->type) && $variables['node']->type == 'collections_page') {
+		/*
 		$values = field_get_items('node', $variables['node'], 'field_json_feed_url');
 		$field_json_feed_url = isset($values) ? 
 			$values[0]['value'] : 
@@ -96,6 +139,7 @@ EOL;
 			),
 			'google_spreadsheet_converter'
 		);
+		*/
 	}
 }
 // */
