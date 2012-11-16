@@ -187,6 +187,7 @@ function data_and_gis_preprocess_block(&$variables, $hook) {
 		// 'data_gis_block-hours'.
 		$variables['classes_array'][] = 'data_gis_block-hours';
 	}
+	watchdog("preprocess_block", print_r($variables['block']));
   // Add a count to all the blocks in the region.
   // $variables['classes_array'][] = 'count-' . $variables['block_id'];
 
