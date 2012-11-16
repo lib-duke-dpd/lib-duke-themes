@@ -187,7 +187,6 @@ function data_and_gis_preprocess_block(&$variables, $hook) {
 		// 'data_gis_block-hours'.
 		$variables['classes_array'][] = 'data_gis_block-hours';
 	}
-	watchdog("preprocess_block", print_r($variables['block'], TRUE));
   // Add a count to all the blocks in the region.
   // $variables['classes_array'][] = 'count-' . $variables['block_id'];
 
@@ -238,6 +237,7 @@ function data_and_gis_breadcrumb($variables) {
 function data_and_gis_preprocess_panels_pane(&$variables) {
 	//kpr($variables);
 	if ($variables['pane']->type == 'block') {
+		watchdog('preprocess_panels_pane', print_r($variables['pane'], TRUE));
 		// Now that it has been determined that a 'block' type has 
 		// been detected, let' see if this is the "about menu", 
 		// and if so, attempt to apply an 'active' class on the 
