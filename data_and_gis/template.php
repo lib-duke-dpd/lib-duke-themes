@@ -237,7 +237,6 @@ function data_and_gis_breadcrumb($variables) {
 function data_and_gis_preprocess_panels_pane(&$variables) {
 	//kpr($variables);
 	if ($variables['pane']->type == 'block') {
-		watchdog('preprocess_panels_pane', print_r($variables['pane'], TRUE));
 		// Now that it has been determined that a 'block' type has 
 		// been detected, let' see if this is the "about menu", 
 		// and if so, attempt to apply an 'active' class on the 
@@ -280,9 +279,9 @@ function data_and_gis_preprocess_panels_pane(&$variables) {
  * 
  */
 function data_and_gis_item_list($variables) {
-	watchdog("data_and_gis_item_list", print_r($variables, TRUE));
+	//watchdog("data_and_gis_item_list", print_r($variables, TRUE));
 }
 
 function data_and_gis_aggregator_block_item($item) {
-	watchdog("datagis_aggregator_block_item", print_r($item, TRUE));
+	//watchdog("datagis_aggregator_block_item", print_r($item, TRUE));
 }
