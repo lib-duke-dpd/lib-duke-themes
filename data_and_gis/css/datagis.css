@@ -223,9 +223,18 @@ border: 1px solid #333;
 
 /* staff profiles */
 div.staffMember { border-bottom: 1px solid #ccc; margin: 15px 0; }
-div.staffMember img { border: 1px solid #ccc; padding: 2px; float-left; margin: 0 15px 0 0; float: left;}
+div.staffMember img { border: 1px solid #ccc; padding: 2px; float: left; margin: 0 15px 0 0; float: left;}
 
 div.staffInfo { float: left; display: block; }
 	h3.staffName { font-size: 16px;}
 span.fieldName { font-weight: bold;}
 div.staffBio { clear: both;  padding: 10px 0; margin: 10px 0; font-size: 11.5px;}
+
+/********** OVERRIDE to CORE styles **********/
+
+/* This one targets a display defect when using the Rubik theme as the admin theme */
+.rubkc-processed FIELDSET.filter-wrapper {
+	margin-top: 0;
+	border: 1px solid #CCC;
+}
+
