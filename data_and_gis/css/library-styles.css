@@ -942,8 +942,8 @@ td.noEventsScheduled {
 /********** OVERRIDE to DRUPAL CORE styles **********/
 
 /* This one targets a display defect when using the Rubik theme as the admin theme */
-.rubkc-processed FIELDSET.filter-wrapper {
-	margin-top: 0;
-	border: 1px solid #CCC;
+.rubik-processed FIELDSET.filter-wrapper {
+	margin-top: 0 !important;
+	border: 1px solid #CCC !important;
 }
 
