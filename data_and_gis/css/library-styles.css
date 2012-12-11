@@ -626,7 +626,8 @@ margin:0;
 }
 
 
-.col-borders {
+/*
+.panel-col {
 	
 	width: 31% !important;
 	border-right: 1px solid #E6E6E6;
@@ -637,7 +638,7 @@ margin:0;
 	margin-left: 10px;
 }
 
-.col-borders-first, .col-borders-last {
+.panel-col-first, .panel-col-last {
 	width: 32% !important;
 	border-right: none;
 	padding-right: 0;
@@ -645,6 +646,19 @@ margin:0;
 	padding-left:0;
 	margin-left: 0;
 	
+}
+*/
+
+.col-borders-first {
+	border-right: 1px solid #E6E6E6;
+	padding-right: 10px;
+	margin-right: 10px;
+}	
+
+.col-borders-last {
+	border-left: 1px solid #E6E6E6;
+	padding-left: 10px;
+	margin-left: 10px;
 }
 
 .imageFrame {
