@@ -625,8 +625,8 @@ margin:0;
 	-webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
 }
 
-/*
-.panel-col {
+
+.col-borders {
 	
 	width: 31% !important;
 	border-right: 1px solid #E6E6E6;
@@ -637,7 +637,7 @@ margin:0;
 	margin-left: 10px;
 }
 
-.panel-col-first, .panel-col-last {
+.col-borders-first, .col-borders-last {
 	width: 32% !important;
 	border-right: none;
 	padding-right: 0;
@@ -646,7 +646,6 @@ margin:0;
 	margin-left: 0;
 	
 }
-*/
 
 .imageFrame {
 	background: none repeat scroll 0 0 white;
