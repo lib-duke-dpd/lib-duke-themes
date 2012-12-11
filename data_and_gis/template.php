@@ -278,10 +278,10 @@ function data_and_gis_preprocess_panels_pane(&$variables) {
  * @param $variables
  * 
  */
-function data_and_gis_item_list($variables) {
+//function data_and_gis_item_list($variables) {
 	//watchdog("data_and_gis_item_list", print_r($variables, TRUE));
-}
+//}
 
-function data_and_gis_aggregator_block_item($item) {
+//function data_and_gis_aggregator_block_item($item) {
 	//watchdog("datagis_aggregator_block_item", print_r($item, TRUE));
-}
+//}
