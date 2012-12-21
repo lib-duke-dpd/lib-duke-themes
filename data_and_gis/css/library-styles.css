@@ -953,6 +953,23 @@ td.noEventsScheduled {
 }
 
 
+/* Blog Feed */
+
+.blog-feed .views-field-title {
+	font-weight:strong;
+}
+
+.blog-feed .views-field-timestamp {
+
+	font-size:80%;
+	color:#777;
+}
+
+.blog-feed .views-row {
+	margin-bottom: .5em;
+}
+
+
 /********** OVERRIDE to DRUPAL CORE styles **********/
 
 /* This one targets a display defect when using the Rubik theme as the admin theme */
