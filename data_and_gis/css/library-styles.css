@@ -956,7 +956,7 @@ td.noEventsScheduled {
 /* Blog Feed */
 
 .blog-feed .views-field-title {
-	font-weight:strong;
+	font-weight:strong !important;
 }
 
 .blog-feed .views-field-timestamp {
@@ -966,7 +966,7 @@ td.noEventsScheduled {
 }
 
 .blog-feed .views-row {
-	margin-bottom: .5em;
+	margin-bottom: .75em;
 }
 
 
