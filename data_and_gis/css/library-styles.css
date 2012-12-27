@@ -764,6 +764,15 @@ margin:0;
 	margin: 0 10px 10px 0;
 }
 
+.twitter-feed-frontpage h2 a {
+	color: #fff;
+}
+
+
+.twitter-feed-frontpage h2 a:hover {
+	text-decoration:underline;
+}
+
 
 /* Search Box */
 
