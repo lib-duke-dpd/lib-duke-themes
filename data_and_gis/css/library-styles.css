@@ -299,7 +299,8 @@ display: block;
 background: white url(http://library.duke.edu/imgs/common/effects/bullet.gif) no-repeat 0 0.5em;
 }
 
-#block-menu-menu-about-us-menu h2 {
+#block-menu-menu-about-us-menu h2,
+#block-block-17 h2 {
 	display: none;
 }
 
@@ -972,7 +973,15 @@ float: left;
 width: /*176px*/ 220px !important;
 margin-left: /*784px*/ 740px !important;
 margin-right: -980px;
+}
 
+
+.sidebar-second #content {
+float: left;
+width: /*764*/ 720px !important;
+margin-left: 0px;
+margin-right: /*-784*/ -740px !important;
+}
 
 
 
