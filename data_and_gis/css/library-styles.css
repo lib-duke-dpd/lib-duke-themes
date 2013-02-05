@@ -299,6 +299,9 @@ display: block;
 background: white url(http://library.duke.edu/imgs/common/effects/bullet.gif) no-repeat 0 0.5em;
 }
 
+#block-menu-menu-about-us-menu h2 {
+	display: none;
+}
 
 
 /* Breadcrumb */
