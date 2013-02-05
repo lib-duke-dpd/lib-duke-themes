@@ -263,7 +263,7 @@ padding: 0 0 0 0;
 
 /* Side nav */
 
-.right-nav ul {
+.right-nav ul, #block-menu-menu-about-us-menu ul {
 border-top: 1px solid #D3D8A5;
 list-style: none outside none;
 margin: 0 0 2em;
@@ -271,7 +271,7 @@ width: 100%;
 padding-left: 0;
 }
 
-.right-nav ul li {
+.right-nav ul li, #block-menu-menu-about-us-menu ul li {
 border-bottom: 1px solid #D3D8A5;
 padding: 7px 0;
 font-size: 105%;
@@ -280,7 +280,7 @@ list-style: none outside none;
 margin: 0.8em 0 0;
 }
 
-.right-nav a {
+.right-nav a, #block-menu-menu-about-us-menu a {
 color: #728302;
 background-color: white;
 padding-left: 10px;
@@ -289,13 +289,15 @@ display: block;
 
 .right-nav a:hover, 
 .right-nav a.current,
-.right-nav a.active {
+.right-nav a.active,
+#block-menu-menu-about-us-menu a:hover,
+#block-menu-menu-about-us-menu a.current,
+#block-menu-menu-about-us-menu a.active {
 text-decoration: none;
 color: #001A57;
 display: block;
 background: white url(http://library.duke.edu/imgs/common/effects/bullet.gif) no-repeat 0 0.5em;
 }
-
 
 
 
