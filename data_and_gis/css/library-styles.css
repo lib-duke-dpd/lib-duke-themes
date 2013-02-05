@@ -967,6 +967,15 @@ td.noEventsScheduled {
 }
 
 
+.sidebar-second .region-sidebar-second {
+float: left;
+width: /*176px*/ 220px !important;
+margin-left: /*784px*/ 740px !important;
+margin-right: -980px;
+
+
+
+
 /* Blog Feed */
 
 .blog-feed .views-field-title {
