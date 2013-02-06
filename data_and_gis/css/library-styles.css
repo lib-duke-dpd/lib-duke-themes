@@ -359,6 +359,40 @@ border-right: 1px solid #e6e6e6;
 }
 
 
+
+
+/* Collections - Simile styles*/
+.exhibit-facet-header, div.exhibit-flowingFacet-header {
+    background: url("http://library.duke.edu/imgs/blue-note/tabularheaderback.jpg") repeat-x scroll 0 0 #2E3B81;
+    border-bottom: 1px solid white;
+    border-top: 1px solid white;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 5px 2px 5px 3px;
+}
+.exhibit-text-facet {
+    background-color: #F2F0EB;
+    border: 1px solid #DBD8D0;
+    padding: 3px;
+}
+.exhibit-text-facet input#search { margin-left: 3px;}
+
+/*
+div#search-facet { width: 100%; }
+div#search-facet div.exhibit-text-facet input { width: 190px !important; }
+div#page-column-right #right-sidebar ul li {
+    border-bottom: 1px solid #D3D8A5;
+    font-size: 105%;
+    line-height: 1.2em;
+    list-style: none outside none;
+    margin: 0.8em 0 0;
+    padding: 7px 0;
+}
+*/
+
+
+
+
 /* CSS for Library Footer */
 .dashedRule {
 	background-image: url(http://library.duke.edu/imgs/blue-note/dot_line.gif);
