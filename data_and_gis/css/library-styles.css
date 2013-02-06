@@ -329,7 +329,30 @@ text-decoration: underline;
 
 
 
+/* About Us */
 
+
+td.info { padding-left: 1em; }
+.infoTable td { padding: .5em 1em .5em 1em;  border-bottom: 1px dotted #DCDAD4;}
+.infoTable {width: 100%; margin:0; }
+.infoTable tr.last td { border-bottom: none;}
+.infoTable a { font-weight: bold;}
+table.simpleColumns { width:100%; background: #fff; }
+table.simpleColumns td { width: 33%; vertical-align: top; border-right: 1px solid #e6e6e6; padding-right: 4px;}
+table.simpleColumns td:last-child { border: none; }
+table.simpleColumns ul li { margin-left: 2em; }
+table.simpleColumns td h2 { margin-left: .5em; }
+table.simpleColumns td: first-child h2 { margin-left: 0; }
+/* About Us - Staff */
+table.staffTable { width: auto; border-bottom: 1px dotted #e6e6e6;}
+table.staffTable caption { text-align: left; }
+table.staffTable td { width: 33%; padding-left: 10px; vertical-align: top; padding-top: 10px; }
+table.staffTable tr:last-child td { padding-bottom: 10px;}
+table.staffTable td.intro { text-align: left; padding-top: 0; padding-bottom: 5px; font-style: italic;}
+table.staffTable td:first-child { padding-left: 0;}
+table.staffTable td p { margin: .1em; }
+table.staffTable td p.staffName { text-transform: uppercase; font-weight: bold; margin-bottom: .2em;}
+table.staffTable td p.staffTitle { font-weight: bold;}
 
 
 
