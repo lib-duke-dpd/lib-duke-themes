@@ -354,6 +354,9 @@ table.staffTable td p { margin: .1em; }
 table.staffTable td p.staffName { text-transform: uppercase; font-weight: bold; margin-bottom: .2em;}
 table.staffTable td p.staffTitle { font-weight: bold;}
 
+.grayBorderRight {
+border-right: 1px solid #e6e6e6;
+}
 
 
 /* CSS for Library Footer */
