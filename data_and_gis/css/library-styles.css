@@ -55,6 +55,10 @@ p.noTopMargin {
 	margin-top: 0 !important;
 }
 
+.upper {
+	text-transform: uppercase;
+}
+
 
 
 
@@ -263,7 +267,7 @@ padding: 0 0 0 0;
 
 /* Side nav */
 
-.right-nav ul, #block-menu-menu-about-us-menu ul {
+.right-nav ul {
 border-top: 1px solid #D3D8A5;
 list-style: none outside none;
 margin: 0 0 2em;
@@ -271,7 +275,7 @@ width: 100%;
 padding-left: 0;
 }
 
-.right-nav ul li, #block-menu-menu-about-us-menu ul li {
+.right-nav ul li {
 border-bottom: 1px solid #D3D8A5;
 padding: 7px 0;
 font-size: 105%;
@@ -280,7 +284,7 @@ list-style: none outside none;
 margin: 0.8em 0 0;
 }
 
-.right-nav a, #block-menu-menu-about-us-menu a {
+.right-nav a {
 color: #728302;
 background-color: white;
 padding-left: 10px;
@@ -289,10 +293,7 @@ display: block;
 
 .right-nav a:hover, 
 .right-nav a.current,
-.right-nav a.active,
-#block-menu-menu-about-us-menu a:hover,
-#block-menu-menu-about-us-menu a.current,
-#block-menu-menu-about-us-menu a.active {
+.right-nav a.active {
 text-decoration: none;
 color: #001A57;
 display: block;
@@ -300,7 +301,8 @@ background: white url(http://library.duke.edu/imgs/common/effects/bullet.gif) no
 }
 
 #block-menu-menu-about-us-menu h2,
-#block-block-17 h2 {
+#block-block-17 h2,
+#block-block-24 h2 {
 	display: none;
 }
 
@@ -970,8 +972,8 @@ td.noEventsScheduled {
 
 .sidebar-second .region-sidebar-second {
 float: left;
-width: /*176px*/ 220px !important;
-margin-left: /*784px*/ 740px !important;
+width: /*176px*/ 210px !important;
+margin-left: /*784px*/ 750px !important;
 margin-right: -980px;
 }
 
