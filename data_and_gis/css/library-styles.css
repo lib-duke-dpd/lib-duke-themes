@@ -392,6 +392,53 @@ div#page-column-right #right-sidebar ul li {
 
 
 
+/* collections sub nav - search, accordion, etc. */
+
+
+div#search-facet {
+	width: 100%;
+}
+
+div#search-facet div.exhibit-text-facet input {
+	width: 190px !important;
+}
+
+div.exhibit-text-facet {
+	margin-bottom: 20px;
+	background-color: #f2f0eb;
+	padding: 3px;
+	border: 1px solid #dbd8d0;
+}
+
+
+ul.browse, 
+ul.browse li ul, 
+ul.browse li ul li {
+	margin: 0;
+	padding: 0;
+}
+
+ul.browse li.collapse {
+	background: url("http://library.duke.edu/imgs/common/navigation/plus_duke.gif") no-repeat scroll 0.8em 0.8em #F0F1D9;
+}
+
+ul.browse li ul {
+margin: 0;
+padding: 5px 0 0;
+}
+
+ul.browse li a.heading {
+	color: #323232;
+	display: block;
+	font-weight: bold;
+	margin-left: 0;
+	margin-right: 0;
+	padding-bottom: 4px;
+	padding-left: 35px;
+	text-transform: uppercase;
+}
+
+
 
 /* CSS for Library Footer */
 .dashedRule {
