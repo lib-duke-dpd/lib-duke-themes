@@ -411,31 +411,60 @@ div.exhibit-text-facet {
 }
 
 
-ul.browse, 
-ul.browse li ul, 
-ul.browse li ul li {
-	margin: 0;
-	padding: 0;
-}
+/* Collapsible Menu in Right Sidebar */
 
-ul.browse li.collapse {
-	background: url("http://library.duke.edu/imgs/common/navigation/plus_duke.gif") no-repeat scroll 0.8em 0.8em #F0F1D9;
+ul.browse, ul.browse li ul, ul.browse li ul li {
+    margin: 0;
+    padding: 0;
 }
-
 ul.browse li ul {
-margin: 0;
-padding: 5px 0 0;
+    margin: 0;
+    padding: 5px 0 0;
 }
-
+ul.browse li {
+    border: 1px solid #E0E2E4;
+    margin: 0 0 20px;
+    padding: 14px 0 8px;
+    list-style: none outside none;
+}
+ul.browse li.collapse {
+    background: url("http://library.duke.edu/imgs/common/navigation/plus_duke.gif") no-repeat scroll 0.8em 0.8em #F0F1D9;
+}
+ul.browse li.expand {
+    background: url("http://library.duke.edu/imgs/common/navigation/minus_duke.gif") no-repeat scroll 0.8em 0.8em #F0F1D9;
+}
+ul.browse li.collapse a {
+    border: 0 none;
+}
+ul.browse li a, ul.browse li ul li a {
+    text-decoration: none;
+}
 ul.browse li a.heading {
-	color: #323232;
-	display: block;
-	font-weight: bold;
-	margin-left: 0;
-	margin-right: 0;
-	padding-bottom: 4px;
-	padding-left: 35px;
-	text-transform: uppercase;
+    color: #323232;
+    display: block;
+    font-weight: bold;
+    margin-left: 0;
+    margin-right: 0;
+    padding-bottom: 4px;
+    padding-left: 35px;
+    text-transform: uppercase;
+}
+ul#topic li#browsetopic ul li {
+    font-size: 95%;
+    margin-left: 10px;
+    margin-right: 5px;
+    list-style: none outside none;
+    margin: .8em 0 0 5px;
+    border: none;
+}
+ul.browse li.expand li, ul.browse li li.expand, ul.browse li.collapse li, ul.browse li li.collapse {
+    background-image: none;
+}
+ul.browse li ul li a {
+    border: 0 none;
+    color: #0736A4;
+    font-weight: normal;
+    text-transform: capitalize;
 }
 
 
