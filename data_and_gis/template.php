@@ -68,6 +68,22 @@ function data_and_gis_preprocess_page(&$variables, $hook) {
 		}
 	}
 	
+	
+	
+	// If page is a collections page, add js/css/jquery
+	$path = drupal_get_path_alias();
+	$pattern = 'collections/*';
+
+	if (drupal_match_path($path, $pattern)) {
+		drupal_add_js('http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js', 'external');
+		drupal_add_js('http://library.duke.edu/javascript/common/jquery_url.js', 'external');
+		drupal_add_js('http://library.duke.edu/javascript/main/tabs-and-rightnav-highlight.js', 'external');
+		drupal_add_js('http://library.duke.edu/javascript/main/right-nav-accordian.js', 'external');
+		drupal_add_css('http://library.duke.edu/css/main/data/datagis.css', 'external');
+	}
+	
+	
+	
 	// TODO -- add debugging when needed
 	if (isset($variables['node']->type) && $variables['node']->type == 'collections_page') {
 		$values = field_get_items('node', $variables['node'], 'field_json_feed_url');
@@ -119,29 +135,6 @@ function _data_and_gis_enable_simile_exhibit($jsonfeedurl) {
 		'google_spreadsheet_converter'
 	);
 }
-
-
-
-/**
- * Add CSS/JS/Jquery to collections pages (for sidebar search and accordion)
- *
- */
-
-
-function _data_and_gis_collections_extras(&$variables) {
-	$path = drupal_get_path_alias();
-	$pattern = 'collections/*';
-
-	if (drupal_match_path($path, $pattern)) {
-		drupal_add_js(drupal_get_path('theme', 'data_and_gis') . '/js/jquery_url.js');
-		drupal_add_js(drupal_get_path('theme', 'data_and_gis') . '/js/simile/exhibit/lens.js');
-		drupal_add_js(drupal_get_path('theme', 'data_and_gis') . '/js/init-exhibit.js');
-		drupal_add_css(drupal_get_path('theme', 'data_and_gis') . '/css/datagis.css');
-		drupal_add_css(drupal_get_path('theme', 'data_and_gis') . '/css/simile-datagis.css');
-		drupal_add_css('http://library.duke.edu/css/main/data/horizontal-nav.css', 'external');
-	}
-}
-
 
 
 
