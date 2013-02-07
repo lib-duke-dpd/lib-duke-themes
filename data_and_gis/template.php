@@ -79,8 +79,6 @@ function data_and_gis_preprocess_page(&$variables, $hook) {
 		drupal_add_js('http://library.duke.edu/javascript/common/jquery_url.js', 'external');
 		drupal_add_js('http://library.duke.edu/javascript/main/tabs-and-rightnav-highlight.js', 'external');
 		drupal_add_js('http://library.duke.edu/javascript/main/right-nav-accordian.js', 'external');
-		drupal_add_css('http://library.duke.edu/css/main/data/datagis.css', 'external');
-		drupal_add_css('http://library.duke.edu/css/main/data/horizontal-nav.css', 'external');
 	}
 	
 	
