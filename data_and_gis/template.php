@@ -129,7 +129,6 @@ function _data_and_gis_enable_simile_exhibit($jsonfeedurl) {
 
 
 function _data_and_gis_collections_extras(&$variables) {
-	$theme_path = path_to_theme();
 	$path = drupal_get_path_alias();
 	$pattern = 'collections/*';
 
