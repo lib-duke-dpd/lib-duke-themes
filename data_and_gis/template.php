@@ -120,6 +120,32 @@ function _data_and_gis_enable_simile_exhibit($jsonfeedurl) {
 	);
 }
 
+
+
+/**
+ * Add CSS/JS/Jquery to collections pages (for sidebar search and accordion)
+ *
+ */
+
+
+function _data_and_gis_collections_extras(&$variables) {
+	$theme_path = path_to_theme();
+	$path = drupal_get_path_alias();
+	$pattern = 'collections/*';
+
+	if (drupal_match_path($path, $pattern)) {
+		drupal_add_js(drupal_get_path('theme', 'data_and_gis') . '/js/jquery_url.js');
+		drupal_add_js(drupal_get_path('theme', 'data_and_gis') . '/js/simile/exhibit/lens.js');
+		drupal_add_js(drupal_get_path('theme', 'data_and_gis') . '/js/init-exhibit.js');
+		drupal_add_css(drupal_get_path('theme', 'data_and_gis') . '/css/datagis.css');
+		drupal_add_css(drupal_get_path('theme', 'data_and_gis') . '/css/simile-datagis.css');
+		drupal_add_css('http://library.duke.edu/css/main/data/horizontal-nav.css', 'external');
+	}
+}
+
+
+
+
 /**
  * Override or insert variables into the node templates.
  *
