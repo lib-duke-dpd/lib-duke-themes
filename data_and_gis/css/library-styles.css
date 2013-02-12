@@ -302,7 +302,8 @@ background: white url(http://library.duke.edu/imgs/common/effects/bullet.gif) no
 
 #block-menu-menu-about-us-menu h2,
 #block-block-17 h2,
-#block-block-24 h2 {
+#block-block-24 h2,
+.right-nav h2 {
 	display: none;
 }
 
