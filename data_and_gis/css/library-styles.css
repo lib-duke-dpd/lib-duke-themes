@@ -1899,7 +1899,7 @@ img.exhibit-toolboxWidget-button {
 	border: 1px solid #CCC !important;
 }
 
-#edit-buttons {
+#panels-panel-context-edit-settings .form-actions {
     width: 100% !important;
     float: left !important;
     position: fixed !important;
@@ -1910,7 +1910,7 @@ img.exhibit-toolboxWidget-button {
     padding: 10px 0 10px 60px !important;
 }
 
-#edit-buttons input {
+#panels-panel-context-edit-settings .form-actions input {
     font-size: 120% !important;
     padding: 5px 10px 5px 10px !important;
     margin-right: 20px !important;
